@@ -6,6 +6,7 @@
     - Configuración del editor de código
     - Uso de librerías
     - Publicación de módulos mediante npm
+    
 
 - Acceso a bases de datos MongoDB
     - Concepto de ODM
