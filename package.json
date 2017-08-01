@@ -1,0 +1,30 @@
+{
+  "name": "curso-node-mongodb",
+  "version": "1.0.0",
+  "description": "Curso sobre el uso de MongoDB desde Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "slides": "reveal-md SUMMARY.md --separator '^\n\n\n' --verticalSeparator '^\n\n'",
+    "pdf": "gitbook pdf ./ ./curso-nodejs-mongodb.pdf",
+    "epub": "gitbook epub ./ ./curso-nodejs-mongodb.epub",
+    "mobi": "gitbook mobi ./ ./curso-nodejs-mongodb.mobi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanda99/node-mongodb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanda99/node-mongodb/issues"
+  },
+  "homepage": "https://github.com/juanda99/node-mongodb#readme",
+  "dependencies": {
+    "gitbook": "^3.2.2",
+    "reveal-md": "^0.4.0"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}
