@@ -1,7 +1,6 @@
 # Instalación y configuración del software
 
 
-
 ## nvm
 - Instalaremos y utilizaremos node vía nvm (node virtual manager)
 - Esto nos permitirá:
@@ -50,6 +49,46 @@ sudo apt-get install build-essential
 npm -v
 node -v
 ```
+
+## npm
+- Es el gestor de paquetes de node
+- **Debemos crear un usuario** en https://www.npmjs.com/
+- Podemos buscar los paquetes que nos interese instalar
+- Podemos publicar nuestra librería :-)
+    
+
+## Configuración de npm
+- Cuando creemos un nuevo proyecto nos interesa que genere automaticamente datos como nuestro nombre o email
+- Ver [documentación para su configuación](https://docs.npmjs.com/) o mediante consola (```npm --help```)	:
+- Mediante ```npm config --help``` vemos los comandos de configuración
+- Mediante ```npm config ls -l``` vemos los parámetros de configuración
+
+```
+npm set init-author-name pepe
+npm set init-author-email pepe@pepe.com
+npm set init-author-url http://pepe.com
+npm set init-license MIT
+npm adduser
+```
+
+- Los cambios se guardan en el fichero $HOME/.npmrc
+- ```npm adduser``` genera un authtoken = login automático al publicar en el registro de npm
+
+## Versiones en node
+- Se utiliza [Semantic Versioning](http://semver.org/)
+
+```
+npm set save-exact true
+```
+
+- Las versiones tienen el formato MAJOR.MINOR.PATCH
+- Cambios de versión:
+    - MAJOR: Cambios en compatibilidad de API,
+    - MINOR: Se añade funcionalidad. Se mantiene la compatibilidad.
+    - PATCH: Se solucionan bug. Se mantiene compatibilidad.
+
+- ¡Puede obligarnos a cambiar el MAJOR muy a menudo! 
+
 
 
 ## git

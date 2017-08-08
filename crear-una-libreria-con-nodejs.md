@@ -16,74 +16,25 @@
 
 ## Funcionalidad librería
 
-- Obtiene una marca de cerveza y sus características
-- Obtiene una o varias marcas de cerveza al azar.
+- Registrar un nuevo usuario
+- Validar un usuario en base a:
+    - email y password
+    - auth token
+- Eliminar usuario
+- Activar usuario
 
-    
+
 ## Control de versiones
 - Utilizaremos git como control de versiones
 - Utilizaremos github como servidor git en la nube para almacenar nuestro repositorio:
     - Haz login con tu usuario (o crea un usuario nuevo)
-    - Crea un nuevo repositorio en GitHub (lo llamaré *cervezas*)
+    - Crea un nuevo repositorio en GitHub (lo llamaré *user-auth*)
     - Sigue las indicaciones de GitHub para crear el repositorio en local y asociarlo al repositorio remoto (GitHub)
 
 
-## Instalación de node
-- Lo más sencillo es [instalar mediante el gestor de paquetes](https://nodejs.org/en/download/package-manager/)
-
-```
-curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-- Comprobamos que esté correctamente instalado
-
-```
-node -v
-npm -v
-```
-
-## npm
-- Es el gestor de paquetes de node
-- **Debemos crear un usuario** en https://www.npmjs.com/
-- Podemos buscar los paquetes que nos interese instalar
-- Podemos publicar nuestra librería :-)
-    
-
-## Configuración de npm
-- Cuando creemos un nuevo proyecto nos interesa que genere automaticamente datos como nuestro nombre o email
-- Ver [documentación para su configuación](https://docs.npmjs.com/) o mediante consola (```npm --help```)	:
-- Mediante ```npm config --help``` vemos los comandos de configuración
-- Mediante ```npm config ls -l``` vemos los parámetros de configuración
-
-```
-npm set init-author-name pepe
-npm set init-author-email pepe@pepe.com
-npm set init-author-url http://pepe.com
-npm set init-license MIT
-npm adduser
-```
-
-- Los cambios se guardan en el fichero $HOME/.npmrc
-- ```npm adduser``` genera un authtoken = login automático al publicar en el registro de npm
-
-## Versiones en node
-- Se utiliza [Semantic Versioning](http://semver.org/)
-
-```
-npm set save-exact true
-```
-
-- Las versiones tienen el formato MAJOR.MINOR.PATCH
-- Cambios de versión:
-    - MAJOR: Cambios en compatibilidad de API,
-    - MINOR: Se añade funcionalidad. Se mantiene la compatibilidad.
-    - PATCH: Se solucionan bug. Se mantiene compatibilidad.
-
-- ¡Puede obligarnos a cambiar el MAJOR muy a menudo! 
 
 ## Creamos el proyecto
-- Dentro del directorio cervezas:
+- Dentro del directorio user-auth:
 
 ```
 npm init
@@ -93,21 +44,75 @@ npm init
 - El resto de parámetros con sus valores por defecto
 - ¡Ya tenemos nuestro **package.json** creado!
 
-## Listar todas las cervezas:
-- Editamos nuestro fichero *src/index.js*
+## Crear modelo usuario
+
+- Para operar con usuarios (documentos) en nuestro código necesitamos objetos JS
+- Instanciamos un modelo de usuario de MongoDB que será sobre el que operaremos (lo más cómodo)
+
 ```
-var cervezas = require('./cervezas.json')
-module.exports = {
-    todas: cervezas
-}
+var User = mongoose.model('User', userSchema);
 ```
-- Abrimos una consola y comprobamos que funcione nuestra librería:
+
+- Los usuarios se guardarán en la colección Users
+- Debemos definir el userSchema
+
+
+## Creación del esquema de usuario
+- Definimos los campos que necesitemos
+- Definimos las validaciones necesarias
+
+
 ```
-node
-> var cervezas = require('./index.js')
-undefined
-> cervezas.todas
+var UserSchema = new Schema({
+  email: {
+    type: String,
+    unique: true,
+    required: true,
+    trim: true
+  },
+  username: {
+    type: String,
+    unique: true,
+    required: true,
+    trim: true
+  },
+  password: {
+    type: String,
+    required: true,
+  }
+});
 ```
+
+## Encriptación de la contraseña
+- La contraseña debe ir encriptada
+- Usaremos una librería que se encargue de ello: [bcrypt]()
+- Definimos un middleware que actúe antes del evento save
+
+
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+
+var mongoose = require('mongoose');
+var UserSchema = new Schema({
+  email: {
+    type: String,
+    unique: true,
+    required: true,
+    trim: true
+  },
+  username: {
+    type: String,
+    unique: true,
+    required: true,
+    trim: true
+  },
+  password: {
+    type: String,
+    required: true,
+  }
+});
+var User = mongoose.model('User', UserSchema);
+module.exports = User;
 
 ## Ahora queremos obtener una cerveza al azar:
 - Instalamos el paquete [uniqueRandomArray](https://www.npmjs.com/package/unique-random-array)
