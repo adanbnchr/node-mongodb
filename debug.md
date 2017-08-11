@@ -31,6 +31,7 @@ console.log (suma(3,5));
 ## Debug en Visual Studio Code
 - Para hacer debug vamos a la vista de Debug, pulsando el icono correspondiente:
 ![](/assets/icono-debug.png)
+
 - Para hacer debug necesitamos un fichero launch.json, que es el que tiene la configuración de debug
 - Para obtener el fichero pulsamos en la ruleta
 
