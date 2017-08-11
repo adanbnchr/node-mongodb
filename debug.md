@@ -32,7 +32,7 @@
 
 * Ejecutamos el siguiente comando
   ```
-  node inspect app.js
+  node debug app.js
   ```
 * Podemos incluir puntos de interrrupción añadiendo líneas con la instrucción :
   ```
@@ -45,6 +45,31 @@
   * Salir de función: o
 
 ## Mediante Chrome Developer Tools
+
+* Hay dos opciones:
+  - Mediante el propio node (node --inspect, experimental en node 6).
+  - Mediante un paquete adicional, **node-inspector**
+
+* Mediante el comando **node --inspect**
+
+```
+⇒  node --inspect app.js
+
+Debugger listening on port 9229.
+
+Warning: This is an experimental feature and could change at any time.
+
+To start debugging, open the following URL in Chrome:
+
+    chrome-devtools://devtools/remote/serve\_file/@60cd6e859b9f557d2312f5bf532f6aec5f284980/inspector.html?experiments=true&v8only=true&ws=127.0.0.1:9229/bb7de882-abe4-4c61-8099-22908239de18
+```
+
+* Se suele poner un punto de interrupción al empezar:
+```
+node --debug-brk --inspect app.js
+```
+
+* El enlace que nos proporciona se abre con el navegador Chrome y se puede inspeccionar el código mediante sus herramientas de desarrollo.
 
 * Instalo el paquete node-inspector:
   ```
@@ -59,7 +84,7 @@
 
 * Primero hay que ir a  la vista de debug, pulsando el icono correspondiente:  
   ![](/assets/icono-debug.png)
-
+  
 * Para hacer debug necesitamos un fichero de configuración _launch.json_, que se obtiene pulsandos en la ruleta
 
 ![](/assets/sublime-debug.png)
@@ -68,6 +93,9 @@
   * Play para empezar
   * Break points pulsando a la izquierda de la numeración de lineas del código
   * Puedes pulsar con el botón derecho y poner breakpoints condicionales.
+
+* [Buen tutorial](https://www.youtube.com/watch?v=hfpkMyvSOp4)
+
 
 
 
