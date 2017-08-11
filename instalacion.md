@@ -75,5 +75,15 @@ sudo apt-get install -y mongodb-org
 
 * Y para entrar a su consola, mediante **mongo**, o mediante algún gui como por ejemplo [Robomongo](https://robomongo.org/), que también podemos instalar desde su web.
 
+## Editor de código
+* Utilizaremos Visual [Code Editor](https://code.visualstudio.com/)
+* Es un producto open source de Microsoft realizado mediante node.js (electron)
+* Uso muy similar a Sublime Text
+* Tiene un excepcional debugger para node.js
+
+
+
+
+
 
 
