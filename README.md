@@ -18,7 +18,6 @@
 - Creación de una API mediante node.js
 
 
-
 ## Documentación
 - **[Generada con Gitbook](https://www.gitbook.com)**
 - Para generar las slides, pdf, epub o mobi
