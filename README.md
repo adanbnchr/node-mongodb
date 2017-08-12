@@ -10,8 +10,9 @@
 
 - Acceso a bases de datos MongoDB
     - Concepto de ODM
-    - Utilizar mongodb o Mongoose para acceder a datos
-    - Ejemplos de uso
+    - Utilizar mongodb para acceder a datos
+    - Utilizar Mongoose para acceder a datos
+    - Ejemplos de uso. Casos prácticos con las ventajas de Mongoose
 
 - Creación de una API mediante node.js
 
