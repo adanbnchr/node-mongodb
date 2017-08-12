@@ -1,6 +1,6 @@
 # JavaScript en servidor
 
-![](node.png)
+![](assets/node.png)
 
 
 ## Qué es nodejs
