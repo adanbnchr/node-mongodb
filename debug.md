@@ -46,9 +46,14 @@
 
 ## Mediante Chrome Developer Tools
 
-* Hay dos opciones:
-  - Mediante el propio node (node --inspect, experimental en node 6).
+* Hay dos opciones dependiendo de la versión de node:
+  - Mediante el propio node
+    ``` 
+    node --inspect app.js
+    ```
+    - Experimental en v6.x
   - Mediante un paquete adicional, **node-inspector**
+    - Deprecated en v7.x
 
 * Mediante el comando **node --inspect**
 
