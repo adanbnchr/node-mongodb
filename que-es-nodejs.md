@@ -35,7 +35,7 @@
 
 {%youtube%}9nPdNyMbpSk{%endyoutube%}
 
-Ver la parte interesante del video: {%m id="9nPdNyMbpSk", m=14, s=47%}{%endm%}
+Ver la parte interesante del video: mínuto 14:47
 
 
 ## Desventajas
