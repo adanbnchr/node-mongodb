@@ -10,10 +10,11 @@
     - Publicación de módulos mediante npm
     
 - Acceso a bases de datos MongoDB
-    - Concepto de ODM
-    - Utilizar mongodb para acceder a datos
-    - Utilizar Mongoose para acceder a datos
-    - Ejemplos de uso. Casos prácticos con las ventajas de Mongoose
+    - Tipos de acceso a MongoDB
+        - Driver nativo
+        - ODM
+    - Utilizar **MongoDB** para acceder a datos
+    - Utilizar **Mongoose** para acceder a datos
 
 - Creación de una API mediante node.js
 
