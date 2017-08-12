@@ -5,8 +5,8 @@
 - Conocer la forma de desarrollar con node.js
     - Características generales de node.js
     - Instalación y configuración
-    - Uso de librerías
     - Debug
+    - Uso de librerías
     - Publicación de módulos mediante npm
     
 - Acceso a bases de datos MongoDB
