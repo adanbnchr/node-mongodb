@@ -3,12 +3,12 @@
 
 ## Objetivos del curso
 - Conocer la forma de desarrollar con node.js
-    - Configuración del editor de código
+    - Características generales de node.js
+    - Instalación y configuración
     - Uso de librerías
     - Debug
     - Publicación de módulos mediante npm
     
-
 - Acceso a bases de datos MongoDB
     - Concepto de ODM
     - Utilizar mongodb para acceder a datos
