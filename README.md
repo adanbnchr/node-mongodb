@@ -5,6 +5,7 @@
 - Conocer la forma de desarrollar con node.js
     - Configuración del editor de código
     - Uso de librerías
+    - Debug
     - Publicación de módulos mediante npm
     
 
