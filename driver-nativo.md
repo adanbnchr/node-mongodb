@@ -1,43 +1,50 @@
 # Acceso a MongoDB mediante driver nativo
 
-## Cargar datos de ejemplo
-- MongoDB proporciona unos [datos de ejemplo](https://docs.mongodb.com/getting-started/shell/import-data/)
-- Obtener datos de: https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json
-- Importar datos:
-    - Se pueden añadir parámetros --host y --port
-    ```
-    mongoimport --db test --collection restaurants --drop --file ~/downloads/primer-dataset.json
-    ```
+## Objetivos
+- Saber realizar operaciones básicas
+  - CRUD
+- Familiarizarnos con la documentación y saber usar la API del driver
+- Trabajar de forma correcta con el modelo asíncrono de node.js
+
+
+## Referencias
+- [Web MongoDB Node.JS driver](http://mongodb.github.io/node-mongodb-native/)
+- [Manual referencia versión 2.2](http://mongodb.github.io/node-mongodb-native/2.2/)  
+- La documentación que hay a continuación está pensada para Linux/Mac. Los cambios para Windows son mínimos y evidentes.
 
 ## Proyecto con driver mongodb
 - Creamos la estructura de ficheros e instalamos las dependencias
 ``` 
-mkdir proyecto1
+mkdir mongodriver
+cd mongodriver
 npm install mongodb --save
 ```
 
 
 ## Probar conexión
 - Creamos un fichero de conexión (app.js):
-```
-var MongoClient = require('mongodb').MongoClient;
 
-// Connection URL
-var url = 'mongodb://localhost:27017/test';
-
-// Use connect method to connect to the server
-MongoClient.connect(url, function(err, db) {
-  if (err) console.log(err.message);
-  else {
-    console.log("Connected successfully to server");
-    db.close();
-  }
-});
-```
+  ```
+  var MongoClient = require('mongodb').MongoClient;
+  
+  // Connection URL
+  var url = 'mongodb://localhost:27017/test';
+  
+  // Use connect method to connect to the server
+  MongoClient.connect(url, function(err, db) {
+    if (err) console.log(err.message);
+    else {
+      console.log("Connected successfully to server");
+      db.close();
+    }
+  });
+  ```
 - Probamos que funcione:
-```
-node app.js
-```
+
+  ```
+  node app.js
+  ```
+  
 - [Modificamos la url si fuera necesario](http://mongodb.github.io/node-mongodb-native/2.2/tutorials/connect/)
 
 
