@@ -27,6 +27,7 @@
 
 ## Ventajas de usar mongodb
 - Más sencillo de aprender
+- Desde la verasión 3.2 (diciembre de 2015) tiene validación
 
 ## Desventajas de usar mongodb
 - Es más propenso a errores
@@ -38,7 +39,7 @@
 - Permite usar middlewares
     - Son hooks que se ejecutan antes o después (pre o post) de determinador eventos (validate, save, remove...)
 - Permite validar los documentos antes de guardarlos
-    - La propia validación es un middleware previo al evento save (presente en mongodb nativo desde versión 3.2 Diciembre 2015)
+    - La propia validación es un middleware previo al evento save 
 - Resumiendo, más productivo
 
 ## Desventajas de usar mongoose
