@@ -95,10 +95,18 @@ sudo apt-get install -y mongodb-org
  
 
 ## Editor de código
-* Utilizaremos Visual [Code Editor](https://code.visualstudio.com/)
+* Utilizaremos [Visual Code Editor](https://code.visualstudio.com/)
 * Es un producto open source de Microsoft realizado mediante node.js (electron)
 * Uso muy similar a Sublime Text
 * Tiene un excepcional debugger para node.js
+
+
+## Linter para JavaScript
+- Utilizaremos eslint (el más habitual)
+- Instalaremos la extensión eslint dentro de Visual Code Editor
+- Utilizaremos eslint como dependencia de desarrollo dentro de nuestros proyectos
+
+
 
 
 

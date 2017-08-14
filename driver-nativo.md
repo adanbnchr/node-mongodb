@@ -18,12 +18,14 @@
 - Creamos la carpeta para nuestro proyecto llamada mongodbDriver
 - Inicializamos nuestro proyecto mediante el comando **npm init**
 - Instalamos nuestras dependencias (mongodb)
+- Instalamos eslint para controlar fallos de sintáxis
 
 ``` 
 mkdir mongodbDriver
 cd mongodbDriver
 npm init
 npm install mongodb --save
+npm install eslint --save-dev
 ```
 
 
@@ -52,6 +54,16 @@ npm install mongodb --save
   ```
   
 - [Modificamos la url si fuera necesario](http://mongodb.github.io/node-mongodb-native/2.2/tutorials/connect/)
+
+
+## Uso de eslint
+- Creamos un fichero de configuración de eslint desde la paleta de comandos (CTRL/COMMAND + MAYS + p)
+- Cambiamos la configuración del fichero .estlintrc.json exigiendo por ejemplo que las líneas no acaben en punto y coma:
+```
+  "semi": ["error", "never"]
+```
+- Observamos los errores en el editor
+- Desde la paleta de comandos le pedimos a eslint que arregle los fallos :-)
 
 
 ## Creamos una colección con validación:
@@ -83,7 +95,7 @@ var createValidated = function(db, callback) {
 - Recuerda que node.js 
     - funciona de modo asíncrono
     - hay que utilizar las funciones de callback
-    - ojo donde cierras la base de datos, se puede quedar la colección sin hacer
+    - ¡ojo donde cierras la base de datos, se puede quedar la colección sin hacer!
 
 ```
 var MongoClient = require('mongodb').MongoClient;
@@ -125,7 +137,14 @@ MongoClient.connect(url, function(err, db) {
 });
 ```
 
-## Insertamos un select:
+## Insertamos registros
+
+
+
+
+
+
+## Búscamos registros
 ```
 var MongoClient = require('mongodb').MongoClient;
 
@@ -182,28 +201,8 @@ MongoClient.connect(url, function(err, db) {
 ```
 
 
-## Proyecto MongoDB
-- Creamos un nuevo proyecto
-```
-mkdir mongodbCrud
-cd mongodbCrud
-npm init
-mkdir src
-touch src/index.js
-```
-- Todo nuestro código irá en la carpeta src
-- index.js será el fichero que arrancaremos para empezar
+## Borramos registros
+- Se deja como ejercicio, utilizando el [Manual referencia](http://mongodb.github.io/node-mongodb-native/2.2/)  
 
-```
-- En el fichero package.json añadiremos dentro de scripts:
-```
-    "start": "node src/index.js"
-```
-- Ahora podremos ejecutar nuestro script mediante
 
-```
-npm start
-```
-
-- Instalamos nodemon...
 
