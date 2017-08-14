@@ -10,7 +10,7 @@
 
 
 ## Características principales
-- El tener el mismo lenguaje en cliente y servidor
+- Tener el mismo lenguaje en cliente y servidor
   - Permite a cualquier persona desarrollar en backend o en frontend
   - Permite reusar código o incluso mover código de cliente a servidor o al revés
 
@@ -62,15 +62,24 @@ trackUser =  function(userId) {
 - Opciones más actuales:
     - Generators / Yields (ES6)
     - Async / Await (ES7)
-    - El soporte de ES6 en node es limitado (--harmony) y también en el navegador => TRANSPILERS (babel)
-- Ver [comparativa de métodos asíncronos](https://thomashunter.name/blog/the-long-road-to-asyncawait-in-javascript/)
 
+- Ver [comparativa de métodos asíncronos](https://thomashunter.name/blog/the-long-road-to-asyncawait-in-javascript/)
+- Ver [ES7 Async / Await](http://rossboucher.com/await/#/1)
+
+
+## Compatiblidad node con ES6 y más allá
+
+- [El soporte de ES6 en node es limitado](http://node.green/)
+  - Se pude añadir el flag --harmony
+  - Se puede utilizar un transpiler, que genere código compatible. El más habitual es [babel](https://babeljs.io/)
+- En el navegador tenemos el mismo problema (mismo motor...): es práctica extendida el uso de transpilers.
+  
 
 ## Hola Mundo en node
-
 - Editamos un fichero en JavaScript, *holaMundo.js*:
   ```
   console.log ("Hola Mundo");
+  
   ```
 - Lo ejecutamos mediante *node holaMundo.js*
 - Si escribimos *node* sin más, podemos acceder a la consola de node, un intérprete de JavaScript, igual que el que tenemos en el navegador
