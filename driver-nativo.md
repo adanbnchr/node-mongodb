@@ -206,3 +206,6 @@ MongoClient.connect(url, function(err, db) {
 
 
 
+## ¿Evitamos el callback hell?
+- Vamos a utilizar async/await (ES7)
+- Para que nos funcione deberemos utilizar babel-node, o en producción compilarlo.
