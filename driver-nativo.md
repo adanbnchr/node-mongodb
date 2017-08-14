@@ -12,11 +12,17 @@
 - [Manual referencia versión 2.2](http://mongodb.github.io/node-mongodb-native/2.2/)  
 - La documentación que hay a continuación está pensada para Linux/Mac. Los cambios para Windows son mínimos y evidentes.
 
-## Proyecto con driver mongodb
-- Creamos la estructura de ficheros e instalamos las dependencias
+
+## Crear el proyecto
+- Visual Code Editor tiene una consola integrada que nos puede ayudar
+- Creamos la carpeta para nuestro proyecto llamada mongodbDriver
+- Inicializamos nuestro proyecto mediante el comando **npm init**
+- Instalamos nuestras dependencias (mongodb)
+
 ``` 
-mkdir mongodriver
-cd mongodriver
+mkdir mongodbDriver
+cd mongodbDriver
+npm init
 npm install mongodb --save
 ```
 
