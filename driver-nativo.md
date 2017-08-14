@@ -57,8 +57,8 @@ npm install eslint --save-dev
 
 
 ## Uso de eslint
-- Creamos un fichero de configuración de eslint desde la paleta de comandos (CTRL/COMMAND + MAYS + p)
-- Cambiamos la configuración del fichero .estlintrc.json exigiendo por ejemplo que las líneas no acaben en punto y coma:
+- Creamos un fichero de configuración de eslint desde la paleta de comandos (*CTRL/COMMAND + MAYS + P*)
+- Cambiamos la configuración del fichero *.estlintrc.json* exigiendo por ejemplo que las líneas no acaben en punto y coma:
 ```
   "semi": ["error", "never"]
 ```
@@ -67,138 +67,221 @@ npm install eslint --save-dev
 
 
 ## Creamos una colección con validación:
+- [Siguiendo la documentación de nuestra API](http://mongodb.github.io/node-mongodb-native/2.2/api/Db.html#createCollection), crearemos una colección con validación:
+
 ```
-var createValidated = function(db, callback) {
-  db.createCollection("contacts", 
-	  {
-	   'validator': { 
+var createValidated = function (db, callback) {
+  db.createCollection("contactos",
+    {
+      'validator': {
         '$or':
-	        [
-	          { 'phone': { '$type': "string" } },
-	          { 'email': { '$regex': /@mongodb\.com$/ } },
-	          { 'status': { '$in': [ "Unknown", "Incomplete" ] } }
-	        ],
-        name: {$type: "string"}, 
-        age: {$type: "int", $gte: 18 }
-      }  
+        [
+          { 'telefono': { '$type': "string" } },
+          { 'email': { '$regex': /@mongodb\.com$/ } },
+          { 'estadoCivil': { '$in': ["Soltero", "Casado"] } }
+        ],
+        nombre: { $type: "string" },
+        edad: { $type: "int", $gte: 18 }
+      }
     },
-    function(err, results) {
-      if (err) console.log(err);
-      else console.log("Collection created.");
-      callback(err, results);
+    function (err, results) {
+      if (err) console.log(err)
+      else console.log("Colección creada")
+      callback(err, results)
     }
-  );
-};
+  )
+}
+
+
+
 ```
 
-- ¿Sabrías integrar esto en el código anterior?
+- ¿Sabrías integrar esto en el código del fichero app.js?
 - Recuerda que node.js 
     - funciona de modo asíncrono
     - hay que utilizar las funciones de callback
     - ¡ojo donde cierras la base de datos, se puede quedar la colección sin hacer!
 
 ```
-var MongoClient = require('mongodb').MongoClient;
-
+var MongoClient = require('mongodb').MongoClient
 // Connection URL
-var url = 'mongodb://localhost:27017/test';
-
-var createValidated = function(db, callback) {
-  db.createCollection("contacts", 
-	  {
-	   'validator': { 
-        '$or':
-	        [
-	          { 'phone': { '$type': "string" } },
-	          { 'email': { '$regex': /@mongodb\.com$/ } },
-	          { 'status': { '$in': [ "Unknown", "Incomplete" ] } }
-	        ],
-        name: {$type: "string"}, 
-        age: {$type: "int", $gte: 18 }
-      }  
-    },
-    function(err, results) {
-      if (err) console.log(err);
-      else console.log("Collection created.");
-      callback(err, results);
-    }
-  );
-};
-
+var url = 'mongodb://localhost:27017/test'
 // Use connect method to connect to the server
-MongoClient.connect(url, function(err, db) {
-  if (err) console.log(err.message);
+MongoClient.connect(url, function (err, db) {
+  if (err) console.log(err.message)
   else {
-    console.log("Connected successfully to server");
-    createValidated(db, function () {
-      db.close();
+    console.log("Connected successfully to server")
+    
+    createValidated(db, function(){
+      db.close()
     })
   }
-});
+})
+
+var createValidated = function (db, callback) {
+  db.createCollection("contactos",
+    {
+      'validator': {
+        '$or':
+        [
+          { 'telefono': { '$type': "string" } },
+          { 'email': { '$regex': /@mongodb\.com$/ } },
+          { 'estadoCivil': { '$in': ["Soltero", "Casado"] } }
+        ],
+        nombre: { $type: "string" },
+        edad: { $type: "int", $gte: 18 }
+      }
+    },
+    function (err, results) {
+      if (err) console.log(err)
+      else console.log("Colección creada")
+      callback(err, results)
+    }
+  )
+}
+
 ```
+
+- Comprobamos que la colección se inserta correctamente:
+  - Recoger un error por consola
+  - Comprobar en Robo3T:
+  ```
+  db.getCollectionInfos()
+  ```
+  - Ojo, si la colección ya está creada no se modifica 
 
 ## Insertamos registros
 
+- Queremos que a la vez que se crea la colección, se inserten unos registros de ejemplo.
+
+- Datos de ejemplo:
+```
+const contactos = [
+  {
+    nombre: 'pepe',
+    edad: 20,
+    estadoCivil: 'Soltero',
+    telefono: '444444444'
+  },
+  {
+    nombre: 'juan',
+    edad: 40,
+    estadoCivil: 'Casado',
+    email: 'juan@midominio.com',
+  },
+  {
+    nombre: 'marta',
+    edad: 30,
+    estadoCivil: 'Soltero',
+    telefono: '999999999'
+  }
+]
+```
+- Función para insertar contactos:
+```
+var insertarContactos = function (db, contactos, callback) {
+  // Obtenemos la colección
+  var collection = db.collection('contactos')
+  // Insertamos los documentos
+  collection.insertMany(contactos, function (err, result) {
+    console.log('Insertados los contactos')
+    callback(result)
+  })
+}
+```
+- Intenta ingegrarlo y probar que funcione. Podría quedar así:
+  
+  ```
+  var MongoClient = require('mongodb').MongoClient
+  // Connection URL
+  var url = 'mongodb://localhost:27017/test'
+  // Use connect method to connect to the server
+  MongoClient.connect(url, function (err, db) {
+    if (err) console.log(err.message)
+    else {
+      console.log("Connected successfully to server")
+      createValidated(db, function () {
+        insertarContactos(db, contactos, function () {
+          db.close()
+        })
+      })
+    }
+  })
+  
+  var createValidated = function (db, callback) {
+    db.createCollection("contactos",
+      {
+        'validator': {
+          '$or':
+          [
+            { 'telefono': { '$type': "string" } },
+            { 'email': { '$regex': /@midominio\.com$/ } }
+          ],
+          nombre: { $type: "string" },
+          edad: { $type: "int", $gte: 18 },
+          estadoCivil: { '$in': ["Soltero", "Casado"] }
+        }
+      },
+      function (err, results) {
+        if (err) console.log(err)
+        else console.log("Colección creada")
+        callback(err, results)
+      }
+    )
+  }
+  
+  const contactos = [
+    {
+      nombre: 'pepe',
+      edad: 20,
+      estadoCivil: 'Soltero',
+      telefono: '444444444'
+    },
+    {
+      nombre: 'juan',
+      edad: 40,
+      estadoCivil: 'Casado',
+      email: 'juan@midominio.com',
+    },
+    {
+      nombre: 'marta',
+      edad: 30,
+      estadoCivil: 'Soltero',
+      telefono: '999999999'
+    }
+  ]
+  
+  var insertarContactos = function (db, contactos, callback) {
+    // Obtenemos la colección
+    var collection = db.collection('contactos')
+    // Insertamos los documentos
+    collection.insertMany(contactos, function (err, result) {
+      console.log('Insertados los contactos')
+      callback(result)
+    })
+  }
+  ```
 
 
 
 
 
 ## Búscamos registros
-```
-var MongoClient = require('mongodb').MongoClient;
+- Se utiliza el método find del objeto collection:
 
-// Connection URL
-var url = 'mongodb://localhost:27017/test';
-
-var createValidated = function(db, callback) {
-  db.createCollection("contacts", 
-	  {
-	   'validator': { 
-        '$or':
-	        [
-	          { 'phone': { '$type': "string" } },
-	          { 'email': { '$regex': /@mongodb\.com$/ } },
-	          { 'status': { '$in': [ "Unknown", "Incomplete" ] } }
-	        ],
-        name: {$type: "string"}, 
-        age: {$type: "int", $gte: 18 }
-      }  
-    },
-    function(err, results) {
-      if (err) console.log(err);
-      else console.log("Collection created.");
-      callback(err, results);
-    }
-  );
-};
-
-var findDocuments = function(db) {
-  // Get the documents collection
-  var collection = db.collection( 'restaurants' );
-  // Find some documents
-  collection.find({ 'cuisine' : 'Brazilian' }, { 'name' : 1, 'cuisine' : 1 }).toArray(function(err, docs) {
-    if (err) console.log(err);
-    else {
-      console.log("Found the following records");
-      console.log(docs)
-      // callback(null, docs);
-    }
-  });
-}
-
-// Use connect method to connect to the server
-MongoClient.connect(url, function(err, db) {
-  if (err) console.log(err.message);
-  else {
-    console.log("Connected successfully to server");
-    findDocuments(db);
-    createValidated(db, function () {
-      db.close();
+  ```
+  var encontrarContactosPorNombre = function (db, nombre, callback) {
+    var collection = db.collection('contactos')
+    collection.find({ 'nombre': nombre }, { 'nombre': 1, 'edad': 1 }).toArray(function (err, docs) {
+      if (err) console.log(err)
+      else {
+        console.log("Encontrados los siguientes contactos")
+        console.log(docs)
+        callback(null, docs)
+      }
     })
   }
-});
-```
+  ```
 
 
 ## Borramos registros
