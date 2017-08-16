@@ -3,40 +3,45 @@
 
 ## Proyecto MongoDB
 - Creamos un nuevo proyecto
+
 ```
-mkdir mongodbCrud
-cd mongodbCrud
+mkdir mongoose
+cd mongoose
 npm init
 mkdir src
 touch src/index.js
 ```
+
 - Todo nuestro código irá en la carpeta src
 - index.js será el fichero que arrancaremos para empezar
 
-```
 - En el fichero package.json añadiremos dentro de scripts:
+
 ```
     "start": "node src/index.js"
 ```
+
 - Ahora podremos ejecutar nuestro script mediante
 
 ```
 npm start
 ```
 
-- Instalamos nodemon...
+- Instalamos [nodemon](https://nodemon.io/) (detecta cambios en nuestra app y la reinicia)
 
-
+- Modificamos nuestro script anterior para que ejecute nodemon en vez de node.
+- Probamos el funcionamiento de nodemon.
 
 
 
 ## Conexión a base de datos
 
-- Cargamos el módulo mongoose:
+- Cargamos el módulo mongoose
 
 ```
 var mongoose = require('mongoose');
 ```
+
 - Nos conectamos 
 
 ```
@@ -45,9 +50,11 @@ mongoose.connect('mongodb://localhost/database');
 
 
 - [La URI puede ser más compleja](https://docs.mongodb.com/manual/reference/connection-string/):
+
 ```
 mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][?options]]
 ```
+
     - Varios hosts para conectarse a una replica set
     - Puerto, por defecto el 27107
 
