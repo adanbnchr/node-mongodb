@@ -387,5 +387,70 @@ db.connect()
 
 
 ## ¿Evitamos el callback hell?
-- Vamos a utilizar async/await (ES7)
+- Vamos a utilizar async/await (ES8)
 - Para que nos funcione deberemos utilizar babel-node, o en producción compilarlo.
+  ```
+  npm i -D babel-cli
+  ```
+- Además de la herramienta en sí, necesitamos instalar los plugins que hacen las traducciones de código "nuevo" a código "viejo". A veces es conveniente instalar un preset (colección de plugins)
+
+npm install --save-dev babel-plugin-transform-async-to-generator
+npm i -D babel-preset-es2015
+
+- Una vez instalados los módulos configuramos babel para que los use, creando un fichero .babelrc con el siguiente código:
+```
+{
+  "presets": ["es2015"],
+  "plugins": ["transform-async-to-generator"]
+}
+```
+
+## Resultado final con JavaScript 2017
+
+- Fichero app.js
+
+```
+import db from './bbdd'
+
+(async () => {
+  try {
+    await db.connect
+    console.log('Conectado a base de datos')
+  } catch (error) {
+    console.log('Error al conectar con la base de datos')
+    console.error(error)
+    // salida forzada con código de error
+    process.exit(1)
+  }
+})()
+```
+
+- Fichero bbdd.js
+```
+import {MongoClient} from 'mongodb'
+import bbdd from './config.js'
+const connect = () =>  MongoClient.connect(bbdd.url, bbdd.options) 
+export default connect
+```
+
+- Si queremos ejecutarlo habrá que utilizar babel-node:
+
+  ```
+  node_modules/.bin/babel-node app.js
+  ```
+  
+- Otra opción sería compilarlo. Lo mejor es poner cualquiera de estas opciones mediante scripts de npm para ahorrarnos todo el path:
+
+```
+  "scripts": {
+    "start": "babel-node app.js",
+    "build": "babel *.js -d dist"
+  },
+```
+
+- Ahora se ejecutaría mediante *npm run start* o *npm run build*.
+- npm busca los ejecutables por defecto dentro de la carpeta *node_modules/bin*
+
+
+- Otra opción utilizar una versión de node.js más actual (no LTS)
+
