@@ -33,7 +33,7 @@
    - Utiliza un solo procesador
    - Si queremos usar toda la potencia de la CPU, tendremos que levantar varias instancias de node y utilizar un balanceador de carga ([por ejemplo con pm2](https://github.com/Unitech/pm2))
 
-{%youtube%}9nPdNyMbpSk{%endyoutube%}
+{% youtube src="https://www.youtube.com/watch?v=9nPdNyMbpSk" %}{% endyoutube %}
 
 Ver la parte interesante del video: mínuto 14:47
 
