@@ -263,9 +263,6 @@ var insertarContactos = function (db, contactos, callback) {
   ```
 
 
-
-
-
 ## Búscamos registros
 - Se utiliza el método find del objeto collection:
 
@@ -290,7 +287,7 @@ var insertarContactos = function (db, contactos, callback) {
 
 ## Estructura acceso a base de datos en una aplicación
 - Para cada operación en la base de datos necesitaremos ejecutar cierto método  del objeto db.
-- El método [connect](http://mongodb.github.io/node-mongodb-native/2.2/api/MongoClient.html#connect) no es un [singleton](https://es.wikipedia.org/wiki/Singleton)
+- El método [connect](http://mongodb.github.io/node-mongodb-native/2.2/api/MongoClient.html#connect) no es [singleton](https://es.wikipedia.org/wiki/Singleton)
 - La conexión a base de datos es un proceso costoso (asíncrono) y lo suyo sería hacerlo una sola vez al arrancar el sistema, no por cada operación sobre la base de datos. 
 - Si no utilizamos el parámetro de callback, el método connect devuelve una promesa.
 
