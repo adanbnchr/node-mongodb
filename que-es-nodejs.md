@@ -61,10 +61,10 @@ trackUser =  function(userId) {
 - Se trata de escribir código asíncrono con un estilo síncrono.
 - Opciones más actuales:
     - Generators / Yields (ES6)
-    - Async / Await (ES7)
+    - Async / Await (ES8)
 
 - Ver [comparativa de métodos asíncronos](https://thomashunter.name/blog/the-long-road-to-asyncawait-in-javascript/)
-- Ver [ES7 Async / Await](http://rossboucher.com/await/#/1)
+- Ver [Async / Await](http://rossboucher.com/await/#/1)
 
 
 ## Compatiblidad node con ES6 y más allá

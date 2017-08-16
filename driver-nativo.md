@@ -393,9 +393,11 @@ db.connect()
   npm i -D babel-cli
   ```
 - Además de la herramienta en sí, necesitamos instalar los plugins que hacen las traducciones de código "nuevo" a código "viejo". A veces es conveniente instalar un preset (colección de plugins)
-
+```
 npm install --save-dev babel-plugin-transform-async-to-generator
 npm i -D babel-preset-es2015
+npm i -D babel-polyfill
+```
 
 - Una vez instalados los módulos configuramos babel para que los use, creando un fichero .babelrc con el siguiente código:
 ```
@@ -410,7 +412,9 @@ npm i -D babel-preset-es2015
 - Fichero app.js
 
 ```
+
 import db from './bbdd'
+import 'babel-polyfill'
 
 (async () => {
   try {
