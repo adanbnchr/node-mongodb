@@ -315,6 +315,13 @@ module.exports.get = () => {
 }
 ```
 
+- La promesa la construimos "a mano"
+- Si el método connect no tiene callback devuelve directamente una promesa, así queda más corto:
+```
+module.exports.connect = () => MongoClient.connect(url, option)
+```
+
+
 ## Estructura aplicación
 - Cargamos el módulo de base de datos y si todo va bien, arrancamos el resto de la aplicación
 
@@ -337,6 +344,46 @@ module.exports.get = () => {
   const db = require('./bbdd');
   db.get().find(...)...
   ```
+
+- Nuestros módulos que acceden a base de datos, tienen la dependencia del módulo bbdd.
+  - Esto hace más complejos los tests (hacer fakes)
+  - El código está más enmarañado y se hace más dificil de mantener.
+
+- Podemos utilizar un patrón de código llamado Dependency Injection:
+  *En vez de crear la dependencia en mi módulo o llamar a algún objeto para obtener mi dependencia, las ponemos como algo externo (parámetro) y el problema se va del módulo.*
+
+- También podemos guardar toda la configuración de nuestra app (de momento solo la bbdd en un fichero específico.
+
+
+## Estructura final
+- Fichero de configuración *config.js*:
+```
+const app = {
+  url: 'mongodb://localhost:27017/test',
+  options: {}
+}
+module.exports = app
+```
+- Módulo de conexión a la base de datos:
+```
+var MongoClient = require('mongodb').MongoClient
+const bbdd = require('./config')
+module.exports.connect = () =>  MongoClient.connect(bbdd.url, bbdd.options) 
+```
+- Módulo principal (main):
+```
+const db = require('./bbdd')
+db.connect()
+  .then(() => console.log('Conectado a base de datos'))
+  // paramos la dependencia conmo parámetro 
+  // .then(() => appCode(db)) 
+  .catch((e) => {
+    console.log('Error al conectar con la base de datos')
+    //console.error(e)
+    // Always hard exit on a database connection error
+    process.exit(1)
+  })
+```
 
 
 ## ¿Evitamos el callback hell?
