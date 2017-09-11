@@ -18,4 +18,5 @@
 
 * [Instalación de node.js](instalacion/instalacion-de-nodejs.md)
 * [Instalación de MongoDB](instalacion/instalacion-de-mongodb.md)
+* [Visual Studio Code](instalacion/visual-studio-code.md)
 
