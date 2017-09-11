@@ -33,10 +33,6 @@
    - Utiliza un solo procesador
    - Si queremos usar toda la potencia de la CPU, tendremos que levantar varias instancias de node y utilizar un balanceador de carga ([por ejemplo con pm2](https://github.com/Unitech/pm2))
 
-{% youtube src="https://www.youtube.com/watch?v=9nPdNyMbpSk" %}{% endyoutube %}
-
-Ver la parte interesante del video: mínuto 14:47
-
 
 ## Desventajas
 - Trabajar con código asíncrono hace que a veces el código no sea excesivamente legible
@@ -82,12 +78,11 @@ trackUser =  function(userId) {
   
   ```
 - Lo ejecutamos mediante *node holaMundo.js*
-- Si escribimos *node* sin más, podemos acceder a la consola de node, un intérprete de JavaScript, igual que el que tenemos en el navegador
+- Si escribimos *node* sin más, podemos acceder a la consola de node, un intérprete de JavaScript, similar al que tenemos en el navegador
 
 
 ## npm
 - Es el gestor de paquetes de node
-- Propongo hacer dos prácticas para coger la dinámica del uso de npm y sus librerías y de trabajar con node: 
-  - Crear una librería en node.js
-  - Crear una api rest mediante node.js
+- Idea similar a Maven en Java o Composer en PHP
+- Vamos a crear una librería en node para ver su uso.
 
