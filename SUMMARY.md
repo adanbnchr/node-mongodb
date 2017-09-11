@@ -4,7 +4,8 @@
 
 * [Introduction](README.md)
 * [Qué es Node.js](que-es-nodejs.md)
-* [Crear una librería con Node.js](crear-una-libreria-con-nodejs.md)
+* [Crear una librería en node.js](crear-una-libreria-con-nodejs.md)
+* [Crear una librería con Node.js2](crear-una-libreria-con-nodejs.md)
 * [Debug](debug.md)
 
 ## Instalación
