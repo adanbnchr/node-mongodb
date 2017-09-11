@@ -17,4 +17,5 @@
 ## Instalación
 
 * [Instalación de node.js](instalacion/instalacion-de-nodejs.md)
+* [Instalación de MongoDB](instalacion/instalacion-de-mongodb.md)
 
