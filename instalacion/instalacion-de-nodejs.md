@@ -1,5 +1,7 @@
 # Instalación y configuración de node.js
 
+
+
 ## Gestor de versiones
 
 * Es habitual utilizar varias versiones de node en nuestra máquina de desarrollo o por cada usuario.
@@ -12,6 +14,7 @@
 * Los gestores de versiones más habituales son:
   * [nvm](https://github.com/creationix/nvm) para Linux/Mac
   * [nvm-windows](https://github.com/coreybutler/nvm-windows) para Windows
+
 
 
 ## Instalación de nvm en Linux
@@ -45,6 +48,7 @@
     ```
     nvm alias default 6
     ```
+
 
 ## Instalación de node en Linux
 
