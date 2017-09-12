@@ -54,6 +54,14 @@ nvm alias default 6 # usar una versión por defecto
   ```
 
 
+
+## Node mediante nvm-windows
+- [Mediante nvm-window](https://github.com/coreybutler/nvm-windows/releases)
+  - Descargamos *nvm-setup.zip* (latest release)
+  - Se ejecuta y se configura si es necesario según su [wiki de instalación](https://github.com/coreybutler/nvm-windows/wiki)
+
+
+
 ## Instalación de node.js en Windows
 
 * [Descargando el paquete msi](https://github.com/coreybutler/nvm-windows)
@@ -79,3 +87,4 @@ npm i -g npm
 npm i -g npm@5.3.0
 ```
 
+)
