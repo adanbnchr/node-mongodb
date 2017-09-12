@@ -392,6 +392,7 @@ npm i -D ghooks
   }
 ```
 
+
 ## Coverage
 - Nos interesa que todo nuestro código se pruebe mediante tests.
 - Necesitamos una herramienta que compruebe el código mientras se realizan los tests:
