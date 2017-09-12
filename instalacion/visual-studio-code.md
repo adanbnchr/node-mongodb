@@ -123,6 +123,7 @@
 ```
 
 
+
 ## Linter para JavaScript
 - Utilizaremos eslint (el más habitual)
 - Instalaremos la extensión eslint dentro de Visual Code Editor
