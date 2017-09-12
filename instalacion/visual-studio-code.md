@@ -86,6 +86,7 @@
     * Necesitamos instalar el [paquete de node.js HTMLHint](https://www.npmjs.com/package/htmlhint)
 
 
+
   
 ## IntelliSense para CSS
  - Puede ser útil que nos de sugerendias respecto a clases de CSS que queremos utilizar:
@@ -93,6 +94,7 @@
      - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
          - Instalaremos HTML CSS Support
          
+
 
 
 ## Comprobar HTML CSS Support
