@@ -31,13 +31,11 @@ sudo apt install -y mongodb-org
 ## Instalación de MongoDB en Windows
 - Según la [documentación de MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
 - [Descargamos el fichero msi correspondiente](https://www.mongodb.com/download-center#community)
-
 - Abrimos un terminal como administrador y creamos los directorios de datos y logs:
 ```
 mkdir c:\data\db
 mkdir c:\data\log
 ```
-
 - Lo ejecutamos:
 ```
 "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"
