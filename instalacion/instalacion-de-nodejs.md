@@ -73,10 +73,10 @@ nvm alias default 6 # usar una versión por defecto
 ## Comprobación de instalación
 * Comprobamos que esté instalado:
 
-```
-npm -v
-node -v
-```
+  ```
+  npm -v
+  node -v
+  ```
 
 
 
