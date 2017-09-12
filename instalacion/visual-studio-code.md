@@ -85,8 +85,6 @@
 * Linter para html con la extensión HTMLHint
     * Necesitamos instalar el [paquete de node.js HTMLHint](https://www.npmjs.com/package/htmlhint)
 
-    ```
-
 
   
 ## IntelliSense para CSS
