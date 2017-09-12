@@ -12,7 +12,7 @@
 
 
 
-# Control de versiones: ventajas
+## Control de versiones: ventajas
 * Poder cambiar de versión de node de forma transparente
 * Evitar tener que hacer sudo cuando instalemos paquetes de forma global (Linux y Mac)
     * Los paquetes globales se instalan para un único usuario y version de node
