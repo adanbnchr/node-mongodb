@@ -64,7 +64,8 @@ nvm alias default 6 # usar una versión por defecto
 
 ## Instalación de node.js en Windows
 
-* [Descargando el paquete msi](https://github.com/coreybutler/nvm-windows)
+- [Descargando el paquete msi](https://nodejs.org/es/download/)
+- ¡Ojo al escoger la versión! Por defecto te ofrece la de 32 bits.
 
 
 ## Comprobación de instalación
