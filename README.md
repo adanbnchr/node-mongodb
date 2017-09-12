@@ -2,7 +2,7 @@
 
 
 ## Objetivos
-- Conocer por encima node.js
+- Conocer las características generales del lenguage node.js
 - Acceso a base de datos node.js desde MongoDB
 
 
