@@ -6,14 +6,14 @@
   * Aprender a hacer debug
   * Conocer como funcionan los módulos en nodejs
   * Familiarizarnos con el editor de código
-* Fichero suma.js
+* Fichero *suma.js*
   ```
   let suma = function(a, b) {
   return a+b;
   }
   module.exports = suma;
   ```
-* La función suma la queremos utilizar desde nuestro programa, por eso lleva el _module.exports_, que indica las partes de este módulo \(fichero\) que se pueden exportar \(utilizar desde otro fichero\).
+* La función suma la queremos utilizar desde nuestro programa, por eso lleva  _module.exports_, que indica las partes de este módulo \(fichero\) que se pueden exportar \(utilizar desde otro fichero\).
 
 * Mi aplicación \(cargo las librerías que necesito mediante require y las utilizo\)
 
