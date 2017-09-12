@@ -136,7 +136,7 @@
 
 
 ## Formateador de código
-- Añadimos el plugin [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) para documentos HTML, JS, JSON, CSS o SASS
+- [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) formatea HTML, JS, JSON, CSS y SASS
 
 - Configuramos un atajo de teclado
     - Accedemos a la paleta de comandos (CTRL + MAY + P)
