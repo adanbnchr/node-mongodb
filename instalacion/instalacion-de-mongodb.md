@@ -41,6 +41,8 @@ mkdir c:\data\log
 "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"
 ```
 
+
+
 ## Configuración de MongoDB como servicio
 - Creamos el fichero de configuración *
 C:\Program Files\MongoDB\Server\3.4\mongod.cfg* con el siguiente contenido:
