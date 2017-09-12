@@ -48,6 +48,7 @@
     - Detecta cambios en vivo    
 
 
+
 ## Autocompletado de ficheros
 * Para autocompletar ficheros utilizaremos **path autocomplete**
     - Mediante CONTROL + ESPACIO podemos lanzarlo
@@ -80,15 +81,18 @@
     * Necesitamos instalar el [paquete de node.js HTMLHint](https://www.npmjs.com/package/htmlhint)
 
     ```
- 
- ## IntelliSense para CSS
+
+
+  
+## IntelliSense para CSS
  - Puede ser útil que nos de sugerendias respecto a clases de CSS que queremos utilizar:
      - [IntelliSense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
      - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
          - Instalaremos HTML CSS Support
          
-         
- ## Comprobar HTML CSS Support
+
+
+## Comprobar HTML CSS Support
  - Al rellenar el atributo class de algún elemento html el editor te da sugerencias (pulsando CTRL+espacio)
  
 
