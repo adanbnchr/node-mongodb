@@ -4,7 +4,7 @@
 
 ## Instalación de MongoDB en Linux
 
-- [Instrucciones de instalación en Ubuntu](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+- [Instalación sobre Ubuntu](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
   - Importar clave pública
   - Añadir repositorio
   - Instalar mediante apt
