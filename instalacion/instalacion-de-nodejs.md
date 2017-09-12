@@ -4,17 +4,18 @@
 
 ## Gestor de versiones
 
-* Es habitual utilizar varias versiones de node en nuestra máquina de desarrollo o por cada usuario.
-* Esto nos permitirá:
-  * Poder cambiar de versión de node de forma transparente
-  * Evitar tener que hacer sudo cuando instalemos paquetes de forma global
-    * Los paquetes globales se instalan para un único usuario y version de node
-    * Los paquetes globales sirven para cualquier proyecto
+* Permite utiizar varias versiones de node en nuestra máquina (por usuario)
 
 * Los gestores de versiones más habituales son:
   * [nvm](https://github.com/creationix/nvm) para Linux/Mac
   * [nvm-windows](https://github.com/coreybutler/nvm-windows) para Windows
 
+
+# Ventajas de usar un control de versiones
+* Poder cambiar de versión de node de forma transparente
+* Evitar tener que hacer sudo cuando instalemos paquetes de forma global (Linux y Mac)
+    * Los paquetes globales se instalan para un único usuario y version de node
+    * Los paquetes globales sirven para cualquier proyecto (del usuario)
 
 
 ## Instalación de nvm en Linux
