@@ -5,6 +5,11 @@
 ## Objetivos
 - Conocer las características generales del lenguage node.js
 - Acceso a base de datos node.js desde MongoDB
+    - Ver diferentes métodos de acceso a MongoDB
+    - Configurar url de acceso a MongoDB
+    - Realizar un CRUD básico
+
+
 
 
 

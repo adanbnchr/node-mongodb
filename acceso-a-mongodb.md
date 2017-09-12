@@ -2,9 +2,7 @@
 
 
 ## Objetivos
-- Ver diferentes métodos de acceso a MongoDB
-- Configurar url de acceso a MongoDB
-- Realizar un CRUD básico
+
 
 ## Módulos de node para acceso a MongoDB
 

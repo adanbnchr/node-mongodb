@@ -14,9 +14,9 @@
 ## Introducción a Node.js
 
 * [Qué es Node.js](que-es-nodejs.md)
+* [Debug](debug.md)
 * [Crear una librería en node.js](crear-una-libreria-con-nodejs.md)
 * [Crear una librería con Node.js2](crear-una-libreria-con-nodejs.md)
-* [Debug](debug.md)
 
 ## Uso de NodeJS con MongoDB
 

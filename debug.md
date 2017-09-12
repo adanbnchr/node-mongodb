@@ -1,6 +1,27 @@
 # Debug en node.js
 
-## Programa de ejemplo
+
+## Configuración del linter
+- Creamos carpeta para el proyecto y generamos el fichero de configuración del linter
+```
+juandaniel@juanda-portatil:~/Desktop/debug-node|
+⇒  eslint --init
+? How would you like to configure ESLint? Answer questions about your style
+? Are you using ECMAScript 6 features? Yes
+? Are you using ES6 modules? Yes
+? Where will your code run? Node
+? Do you use JSX? No
+? What style of indentation do you use? Spaces
+? What quotes do you use for strings? Single
+? What line endings do you use? Unix
+? Do you require semicolons? No
+? What format do you want your config file to be in? YAML
+Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
+```
+
+
+
+## Programa de ejemplo con node
 
 * Vamos a utilizar un ejemplo muy sencillo que nos sirva para:
   * Aprender a hacer debug
@@ -9,24 +30,44 @@
 * Fichero *suma.js*
   ```
   let suma = function(a, b) {
-  return a+b;
+    return a+b
   }
-  module.exports = suma;
+  module.exports = suma
   ```
-* La función suma la queremos utilizar desde nuestro programa, por eso lleva  _module.exports_, que indica las partes de este módulo \(fichero\) que se pueden exportar \(utilizar desde otro fichero\).
 
-* Mi aplicación \(cargo las librerías que necesito mediante require y las utilizo\)
+
+
+* **module.exports** indica las partes de este módulo \(fichero\) que se pueden exportar \(utilizar desde otro fichero\).
+
+* **require**: para cargar los módulos (librerías) que necesito.
 
   ```
-  let suma = require('./suma.js');
-  console.log (suma(3,5));
+  // fichero app.js
+  let suma = require('./suma.js')
+  console.log (suma(3,5))
   ```
+
+
+
+## Programa de ejemplo con node y ES6
+- El código anterior se podría haber escrito utilizando *arrow functions*
+- Sin embargo no podemos usar módulos de ES6
+```
+let suma = (a, b) =>a+b
+module.exports = suma
+// export default suma
+
+
+
 
 ## Opciones de debug
 
 * Utilizando la consola
 * Utilizando Chrome Developer Tools
-* Mediante Visual Studio
+* Mediante Visual Studioç
+
+
+
 
 ## Debug en consola
 
@@ -44,6 +85,9 @@
   * Entrar en función: s
   * Salir de función: o
 
+
+
+
 ## Mediante Chrome Developer Tools
 
 * Hay dos opciones dependiendo de la versión de node:
@@ -54,6 +98,10 @@
     - Experimental en v6.x
   - Mediante un paquete adicional, **node-inspector**
     - Deprecated en v7.x
+
+
+
+## Debug con node y Chrome
 
 * Mediante el comando **node --inspect**
 
@@ -76,6 +124,9 @@ node --debug-brk --inspect app.js
 
 * El enlace que nos proporciona se abre con el navegador Chrome y se puede inspeccionar el código mediante sus herramientas de desarrollo.
 
+
+## Debug con node-inspector y Chrome
+
 * Instalo el paquete node-inspector:
   ```
   npm i -g node-inspector
@@ -84,6 +135,9 @@ node --debug-brk --inspect app.js
   ```
   node-debug app.js
   ```
+
+
+
 
 ## Debug en Visual Studio Code
 
