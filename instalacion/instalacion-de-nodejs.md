@@ -60,7 +60,7 @@ nvm alias default 6 # usar una versión por defecto
   - Descargamos *nvm-setup.zip* (latest release)
   - Se ejecuta y se configura si es necesario según su [wiki de instalación](https://github.com/coreybutler/nvm-windows/wiki)
 - Sintaxis similar a la versión de Linux
-- Mucho menos recorrido que la versión de Linux (no lo usaré)
+- **Mucho menos recorrido que la versión de Linux (no lo usaré)**
 
 
 
