@@ -39,7 +39,7 @@
     * Settings por defecto (se pueden copiar, no modificar)
     * User Settings (sobreescriben los anteriores)
     * Workspace Settings para nuestras especificaciones en un proyecto en particular
-    
+
 
     
 ## Cambiar settings
