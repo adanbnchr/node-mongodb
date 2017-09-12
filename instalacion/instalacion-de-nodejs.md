@@ -68,6 +68,7 @@ nvm alias default 6 # usar una versión por defecto
 - ¡Ojo al escoger la versión! Por defecto te ofrece la de 32 bits.
 
 
+
 ## Comprobación de instalación
 * Comprobamos que esté instalado:
 
