@@ -40,13 +40,16 @@
 
 ## Instalación de node en Linux
 
-* Si hemos utilizado un gestor de versiones de node, ya habremos instalado node.
+* La versión que viene en el repositorio suele estar desfasada
+  ```
+  sudo apt-get purge nodejs npm
+  ```
+  
 * Instalación en Linux: 
-
   ```
   curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-  sudo apt-get install -y nodejs
-  sudo apt-get install build-essential
+  sudo apt install -y nodejs
+  sudo apt install build-essential
   ```
 
 
@@ -65,7 +68,7 @@ node -v
 
 
 ## Actualización de npm
-* Es habitual actualizar la versión de npm (la que viene por defecto empaquetada suele estar desfasada).
+* npm se actualiza a si mismo:
 ```
 npm i -g npm
 ```
