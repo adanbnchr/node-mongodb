@@ -44,9 +44,9 @@ mkdir c:\data\log
 
 
 ## Configuración de MongoDB como servicio
-- Creamos el fichero de configuración *
-C:\Program Files\MongoDB\Server\3.4\mongod.cfg*:
+- Creamos fichero de configuración:
 ```
+# C:\Program Files\MongoDB\Server\3.4\mongod.cfg
 systemLog:
     destination: file
     path: c:\data\log\mongod.log
