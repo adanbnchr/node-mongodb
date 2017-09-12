@@ -1,11 +1,13 @@
 # Editor de código
 
 
+
 ## Instalación
 * Utilizaremos [Visual Code Editor](https://code.visualstudio.com/)
 * Es un producto open source de Microsoft realizado mediante node.js (electron)
 * Uso muy similar a Sublime Text (empezando con la paleta de comandos CTRL + ALT + P)
 * Tiene un debugger para node.js muy bueno.
+
 
 
 ## Extensiones
@@ -22,6 +24,7 @@
     ```
     "path-autocomplete.extensionOnImport": true
     ```
+
 
 
 ## html
@@ -78,9 +81,11 @@
                     </html>
                     ```
                 
-         
+
+                  
 ## Linter para css
 - En principio Visual Code Editor ya lleva un linter por defecto :-)
+
 
 
 ## Linter para JavaScript
@@ -94,6 +99,7 @@
 - Abriremos la paleta de comandos (CTRL + MAYS + P) y elegiremos *Create a .eslintrc.json file*
 
 
+
 ## Formateador de código
 - Añadimos el plugin [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) para documentos HTML, JS, JSON, CSS o SASS
 
@@ -103,6 +109,7 @@
     - Seleccionamos *Preferencias: abrir métodos abreviados de teclado*
     - Filtramos de nuevo, ahora por beautify
     - Configuramos el atajo mediante CTRL + F
+
 
 
 ## Extensiones preinstaladas
