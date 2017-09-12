@@ -11,12 +11,12 @@
   * [nvm-windows](https://github.com/coreybutler/nvm-windows) para Windows
 
 
-
 ## Control de versiones: ventajas
 * Poder cambiar de versión de node de forma transparente
 * Evitar tener que hacer sudo cuando instalemos paquetes de forma global (Linux y Mac)
     * Los paquetes globales se instalan para un único usuario y version de node
     * Los paquetes globales sirven para cualquier proyecto (del usuario)
+
 
 
 ## Instalación de nvm en Linux
