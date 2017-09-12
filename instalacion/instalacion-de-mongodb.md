@@ -21,8 +21,6 @@
   sudo service mongod start
   ```
 
-* Y para entrar a su consola, mediante **mongo**, o mediante algún gui como por ejemplo [Robomongo](https://robomongo.org/), que también podemos instalar desde su web.
-
 
 ## Instalación de MongoDB en Windows
 - [Descargamos el fichero msi correspondiente](https://www.mongodb.com/download-center#community)
@@ -54,7 +52,7 @@ net start MongoDB
 
 
 ## Clientes de MongoDB
-- Podemos utilizar mongo.exe (consola de JavaScript)
+- Podemos utilizar mongo (consola de JavaScript)
 
 - Podemos utilizar algún gui como por ejemplo [Robo3T](https://robomongo.org/), hasta hace poco llamado Robomongo.
 
