@@ -92,7 +92,7 @@
  - Puede ser útil que nos de sugerendias respecto a clases de CSS que queremos utilizar:
      - [IntelliSense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
      - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-         - Instalaremos HTML CSS Support
+ - Instalaremos HTML CSS Support
          
 
 
