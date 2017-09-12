@@ -27,6 +27,7 @@ sudo apt install -y mongodb-org
   ```
 
 
+
 ## Instalación de MongoDB en Windows
 - [Descargamos el fichero msi correspondiente](https://www.mongodb.com/download-center#community)
 
