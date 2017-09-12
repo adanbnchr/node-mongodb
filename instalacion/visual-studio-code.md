@@ -37,7 +37,7 @@
     - De las extensiones instaladas
 - Se definen varios ámbitos, en órden de prioridad inversa:
     * Settings por defecto (se pueden copiar, no modificar)
-    * User Settings (sobreescriben los nateriores)
+    * User Settings (sobreescriben los anteriores)
     * Workspace Settings para nuestras especificaciones en un proyecto en particular
 
 
