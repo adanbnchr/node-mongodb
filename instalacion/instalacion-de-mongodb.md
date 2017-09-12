@@ -54,7 +54,7 @@ storage:
     dbPath: c:\data\db
 ```
 
-- Instalamos y arrancamos el servicio de Mongodb
+- Instalamos y arrancamos el servicio de Mongodb (con consola de administrador)
 
 ```
 "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.4\mongod.cfg" --install
