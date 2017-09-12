@@ -113,10 +113,7 @@
 ## Generar fichero html para pruebas
 - Crea un fichero html vacío (extensión html para que Emmet funcione)
 - Pulsa ! + TAB para crear una plantilla html
-- Dentro del head introduce *link:src + TAB*
-    - Emmet habrá generado la instrucción para incluir un fichero css
-    - Rellena el atributo src con el nombre del fichero css
-        - Ayúdate del autocompletado de ficheros
+- Dentro del head introduce *link:src + TAB* (abreviatura Emmet)
 - Si en el body creas algún elemento, comprueba que salga autocompletado para el atributo class del párrafo:
 ``` 
 <p class="">Prueba</p>
@@ -132,7 +129,7 @@
     npm install -g eslint
     ```
 - Utilizaremos eslint como dependencia de desarrollo dentro de nuestros proyectos
-- Abriremos la paleta de comandos (CTRL + MAYS + P) y elegiremos *Create a .eslintrc.json file*
+- Abrir paleta de comandos (CTRL + MAYS + P) y elegir *Create a .eslintrc.json file*
 
 
 
