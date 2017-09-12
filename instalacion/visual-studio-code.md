@@ -32,13 +32,17 @@
 
 ## Settings
 
-* Cambian la configuración por defecto
+- Cambian la configuración por defecto
     - Del editor de código
     - De las extensiones instaladas
 - Se definen varios ámbitos, en órden de prioridad inversa:
     * Settings por defecto (se pueden copiar, no modificar)
     * User Settings (sobreescriben los anteriores)
     * Workspace Settings para nuestras especificaciones en un proyecto en particular
+- Ejemplo: Cambia el el tabulador de 4 a 2 espacios
+```
+"editor.tabSize": 2
+``` 
 
 
 
@@ -63,13 +67,13 @@
 ## Ingellisense para html
 * Intellisense:
      - Por defecto nos da sugerencias (ej. teclea < y pulsa CTRL + espacio)
-     - Si no utilizamos angular o ionic por ej, puede ser útil quitarlo del intellisense. Yo particularmente también uso dos espacios para la tabulación en vez de 4:
+     - Si no utilizamos angular o ionic por ej, puede ser útil quitarlo del intellisense (en los settings)
 
     ```
      {
         "html.suggest.angular1": false,
         "html.suggest.ionic": false,
-        "editor.tabSize": 2
+
     }
 
     ```
