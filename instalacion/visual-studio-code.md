@@ -39,7 +39,13 @@
     * Settings por defecto (se pueden copiar, no modificar)
     * User Settings (sobreescriben los anteriores)
     * Workspace Settings para nuestras especificaciones en un proyecto en particular
-- Ejemplo: Cambia el el tabulador de 4 a 2 espacios
+    
+    
+    
+## Cambiar settings
+- En node.js se anidan muy a menudo funciones.
+- Resulta útil indentar el código solo con dos espacios 
+- Cambia el el tabulador de 4 a 2 espacios desde tus settings de usuario:
 ```
 "editor.tabSize": 2
 ``` 
