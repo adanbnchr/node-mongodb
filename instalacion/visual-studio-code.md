@@ -143,7 +143,7 @@
     - Filtramos por shortcuts
     - Seleccionamos *Preferencias: abrir métodos abreviados de teclado*
     - Filtramos de nuevo, ahora por beautify
-    - Configuramos el atajo mediante CTRL + F
+    - Configuramos el atajo mediante ALT + F
 
 
 
