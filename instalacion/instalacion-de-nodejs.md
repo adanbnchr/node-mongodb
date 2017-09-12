@@ -59,7 +59,9 @@ nvm alias default 6 # usar una versión por defecto
 - [Mediante nvm-window](https://github.com/coreybutler/nvm-windows/releases)
   - Descargamos *nvm-setup.zip* (latest release)
   - Se ejecuta y se configura si es necesario según su [wiki de instalación](https://github.com/coreybutler/nvm-windows/wiki)
+- Sintaxis similar a la versión de Linux
 - Mucho menos recorrido que la versión de Linux (no lo usaré)
+
 
 
 ## Instalación de node.js en Windows
