@@ -11,7 +11,6 @@
 git clone https://github.com/juanda99/node-mongodb
 cd node-mongodb
 node_modules/.bin/gitbook install
-npm install -g gitbook-cli
 npm install
 npm run slides
 npm run pdf
