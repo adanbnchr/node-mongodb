@@ -45,7 +45,7 @@ mkdir c:\data\log
 
 ## Configuración de MongoDB como servicio
 - Creamos el fichero de configuración *
-C:\Program Files\MongoDB\Server\3.4\mongod.cfg* con el siguiente contenido:
+C:\Program Files\MongoDB\Server\3.4\mongod.cfg*:
 ```
 systemLog:
     destination: file
@@ -54,12 +54,9 @@ storage:
     dbPath: c:\data\db
 ```
 
-- Instalamos el servicio de Mongodb
+- Instalamos y arrancamos el servicio de Mongodb
 ```
 "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.4\mongod.cfg" --install
-```
-- Arrancamos el servicio:
-```
 net start MongoDB
 ```
 
