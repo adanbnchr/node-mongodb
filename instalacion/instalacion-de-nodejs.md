@@ -38,6 +38,7 @@
     ```
 
 
+
 ## Instalación de node en Linux
 
 * La versión que viene en el repositorio suele estar desfasada
