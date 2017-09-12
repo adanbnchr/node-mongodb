@@ -28,28 +28,13 @@
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
   ```
 
-  * Instalamos node:
+  * Comandos habituales:
 
     ```
-    nvm install 6
-    ```
-
-  * Ver las versiones que hay instaladas:
-
-    ```
-    nvm ls
-    ```
-
-  * Usar una versión en particular:
-
-    ```
-    nvm use 6
-    ```
-  
-  * Usar una versión en particular siempre que abrimos un shell:
-
-    ```
-    nvm alias default 6
+    nvm install 6 # instalamos node v6
+    nvm ls # vemos las versiones de node que hay instaladas
+    nvm use 6 # usamos la versión 6
+    nvm alias default 6 # usaremos siempre la versión 6 por defecto
     ```
 
 
