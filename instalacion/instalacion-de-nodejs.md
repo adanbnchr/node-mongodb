@@ -20,15 +20,15 @@
 
 
 
-## Instalación de nvm en Linux
+## Node mediante nvm (Linux)
 
-* Instalaremos y utilizaremos node vía nvm \(node virtual manager\)
+* Instalamos nvm \(node virtual manager\)
 
   ```
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
   ```
 
-  * Instalar una versión de node:
+  * Instalamos node:
 
     ```
     nvm install 6
