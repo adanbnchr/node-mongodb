@@ -46,7 +46,7 @@ nvm alias default 6 # usar una versión por defecto
   sudo apt-get purge nodejs npm
   ```
   
-* Instalación en Linux: 
+* Instalamos una versión actual (6_x, 7_x o 8_x): 
   ```
   curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
   sudo apt install -y nodejs
