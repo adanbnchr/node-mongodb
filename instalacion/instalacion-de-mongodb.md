@@ -57,8 +57,10 @@ storage:
 - Instalamos y arrancamos el servicio de Mongodb
 ```
 "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.4\mongod.cfg" --install
+
 net start MongoDB
 ```
+
 
 
 ## Clientes de MongoDB
