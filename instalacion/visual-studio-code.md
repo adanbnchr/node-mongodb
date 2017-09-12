@@ -3,20 +3,31 @@
 
 
 ## Instalación
-* Utilizaremos [Visual Code Editor](https://code.visualstudio.com/)
-* Es un producto open source de Microsoft realizado mediante node.js (electron)
+* Utilizaremos [Visual Studio Code](https://code.visualstudio.com/)
+* Es un producto open source de Microsoft realizado mediante node.js ([electron](https://electron.atom.io/))
 * Uso muy similar a Sublime Text (empezando con la paleta de comandos CTRL + ALT + P)
 * Tiene un debugger para node.js muy bueno.
 
 
 
 ## Extensiones
-* Se pueden ver desde el propio software o desde https://marketplace.visualstudio.com
-* Emmet ya viene preinstalado
+* Se pueden ver e instalar desde el propio software o desde https://marketplace.visualstudio.com
+    - Las instrucciones de uso aparecen en Visual Code Editor una vez instalado el plugin
+    - A menudo es necesario recargar la ventana
+    - En función de las instaladas, el editor hace recomendaciones
+    
+- Las extensiones más habituales ya vienen preinstaladas
+    - Debugger
+    - Emmet
+    - Terminal
+    - Control de versiones
+
+
+
 * Instalaremos por ej. live server
     - Hace falta recargar
     - Detecta cambios en vivo    
-    - Las instrucciones de uso aparecen en Visual Code Editor una vez instalado el plugin
+    
 * Para autocompletar ficheros utilizaremos **path autocomplete**
     - Mediante CONTROL + ESPACIO podemos lanzarlo
     - Prueba con un fichero css (para insertar el fichero utiliza la abreviatura de emmet link)
@@ -113,11 +124,7 @@
 
 
 ## Extensiones preinstaladas
-- Las extensiones más habituales ya vienen preinstaladas
-    - Debugger
-    - Emmet
-    - Terminal (CTRL + ñ)
-    - Control de versiones
+
 
 
 ## Extensiones para node
