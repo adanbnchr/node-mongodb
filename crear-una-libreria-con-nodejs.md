@@ -39,7 +39,7 @@
     
 
 ## Configuración de npm
-- Cuando creemos un nuevo proyecto nos interesa que genere automaticamente datos como nuestro nombre o email
+- Cuando creemos un nuevo proyecto nos interesa que genere automaticamente datos como el nombre o email
 - Ver [documentación para su configuación](https://docs.npmjs.com/) o mediante consola (```npm --help```)	:
 - Mediante ```npm config --help``` vemos los comandos de configuración
 - Mediante ```npm config ls -l``` vemos los parámetros de configuración
@@ -115,8 +115,9 @@ module.exports = {
 
 - Comprobamos que funcione. Ojo, ¡alazar es una función!
 
+
 ## Subimos la librería a github
-- Necesitamos crear un **.gitignore** para la carpeta no sincronizar **node_modules**
+- Necesitamos crear un **.gitignore** para no sincronizar la carpeta **node_modules**
 - Los comandos que habrá que hacer luego son:
 ```
 git status
@@ -124,11 +125,12 @@ git add -A
 git status
 git commit -m "versión inicial"
 ```
-- Ojo que haya cogido los cambios del .gitignore para hacer el push
+- Comprobamos mediante *git status* que la carpeta node_modules ya no se procesa
+- Subimos el proyecto al repo de github:
 ```
 git push
 ```
-- Comprobamos ahora en github que esté todo correcto.
+
 
 ## Publicamos en npm
 ```
@@ -138,6 +140,7 @@ npm publish
 ```
 npm info <nombre paquete>
 ```
+
 
 ## Probamos nuestra librería
 - Creamos un nuevo proyecto e instalamos nuestra librería
@@ -176,7 +179,7 @@ module.exports = {
 }
 ```
 - Ahora tendremos que cambiar la versión a 1.1.0 (semver) en el package.json y publicar el paquete de nuevo
-- También añadiremos la tag en GitHub
+- También añadiremos el tag en GitHub
 ¿Lo vamos pillando?
 
 
@@ -187,7 +190,7 @@ module.exports = {
 ```
 npm publish --tag beta
 ```
-- Con npm info podremos ver un listado de nuestras versiones (¡mirá las dist-tags)
+- Con npm info podremos ver un listado de nuestras versiones (¡mirá las dist-tags!)
 - Para instalar la versión beta:
 ```
 npm install <nombre paquete>@beta
@@ -306,6 +309,7 @@ semantic-release-cli setup
     - Incluye un nuevo script (*semantic-release*)
     - Quita la versión
     - Añade la dependencia de desarrollo de Semantic Release
+    
 
 ## Versiones del software
 - Utilizamos semantic versioning
