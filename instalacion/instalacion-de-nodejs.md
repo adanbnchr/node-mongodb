@@ -11,6 +11,7 @@
   * [nvm-windows](https://github.com/coreybutler/nvm-windows) para Windows
 
 
+
 # Ventajas de usar un control de versiones
 * Poder cambiar de versión de node de forma transparente
 * Evitar tener que hacer sudo cuando instalemos paquetes de forma global (Linux y Mac)
