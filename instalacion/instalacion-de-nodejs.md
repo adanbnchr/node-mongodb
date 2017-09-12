@@ -31,10 +31,10 @@
   * Comandos habituales:
 
     ```
-    nvm install 6 # instalamos node v6
-    nvm ls # vemos las versiones de node que hay instaladas
-    nvm use 6 # usamos la versión 6
-    nvm alias default 6 # usaremos siempre la versión 6 por defecto
+    nvm install 6      # instalamos node v6
+    nvm ls              # vemos las versiones de node que hay instaladas
+    nvm use 6           # usamos la versión 6
+    nvm alias default 6 # usar una versión por defecto
     ```
 
 
