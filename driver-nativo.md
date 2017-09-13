@@ -133,7 +133,7 @@ var url = 'mongodb://localhost:27017/test'
 MongoClient.connect(url, function (err, db) {
   if (err) console.log(err.message)
   else {
-    console.log("Connected successfully to server")
+    console.log('Connected successfully to server')
     
     createValidated(db, function(){
       db.close()
@@ -165,13 +165,15 @@ var createValidated = function (db, callback) {
 
 ```
 
-- Comprobamos que la colección se inserta correctamente:
-  - Recoger un error por consola
-  - Comprobar en Robo3T:
+
+
+## Comprobamos que la colección se crea
+
+- Accediendo a Robo3T y navegando hasta la colección
+- Vemos sus condiciones de validación de registros:
   ```
   db.getCollectionInfos()
   ```
-  - Ojo, si la colección ya está creada no se modifica 
 
 
 
