@@ -117,12 +117,11 @@ let suma = require('./suma.js')
     - Experimental en v6.x
   - Mediante un paquete adicional, **node-inspector**
     - Deprecated en v7.x
+    - No lo veremos
 
 
 
-## Debug con node y Chrome
-
-* Mediante el comando **node --inspect**
+## node --inspect
 
 ```
 ⇒  node --inspect app.js
