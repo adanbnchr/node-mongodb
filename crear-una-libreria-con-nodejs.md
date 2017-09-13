@@ -126,7 +126,7 @@ undefined
 
 
 
-## Ahora queremos obtener una cerveza al azar:
+## Obtener una cerveza al azar:
 - Instalamos el paquete [uniqueRandomArray](https://www.npmjs.com/package/unique-random-array)
 ```
 npm i -S unique-random-array
