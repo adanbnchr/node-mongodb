@@ -33,7 +33,7 @@ npm install eslint --save-dev
 
 
 
-## Probar conexión
+## Crear conexión
 - Creamos un fichero de conexión (app.js):
 
   ```
@@ -51,7 +51,10 @@ npm install eslint --save-dev
     }
   });
   ```
-- Probamos que funcione:
+
+
+
+## Probar conexión
 
   ```
   node app.js
