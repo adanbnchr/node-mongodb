@@ -19,11 +19,9 @@
 
 
 ## Crear el proyecto
-- Visual Code Editor tiene una consola integrada que nos puede ayudar
 - Creamos la carpeta para nuestro proyecto llamada mongodbDriver
 - Inicializamos nuestro proyecto mediante el comando **npm init**
-- Instalamos nuestras dependencias (mongodb)
-- Instalamos eslint para controlar fallos de sintáxis
+- Instalamos nuestras dependencias (mongodb y eslint)
 
 ``` 
 mkdir mongodbDriver
