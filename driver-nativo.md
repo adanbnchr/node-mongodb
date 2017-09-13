@@ -303,19 +303,19 @@ var insertarContactos = function (db, contactos, callback) {
 
 - Se utiliza el método find del objeto collection:
 
-  ```
-  var encontrarContactosPorNombre = function (db, nombre, callback) {
-    var collection = db.collection('contactos')
-    collection.find({ 'nombre': nombre }, { 'nombre': 1, 'edad': 1 }).toArray(function (err, docs) {
-      if (err) console.log(err)
-      else {
-        console.log("Encontrados los siguientes contactos")
-        console.log(docs)
-        callback(null, docs)
-      }
-    })
-  }
-  ```
+```
+var encontrarContactosPorNombre = function (db, nombre, callback) {
+  var collection = db.collection('contactos')
+  collection.find({ 'nombre': nombre }, { 'nombre': 1, 'edad': 1 }).toArray(function (err, docs) {
+    if (err) console.log(err)
+    else {
+      console.log("Encontrados los siguientes contactos")
+      console.log(docs)
+      callback(null, docs)
+    }
+  })
+}
+```
 
 
 
