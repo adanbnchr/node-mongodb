@@ -399,7 +399,8 @@ module.exports.connect = () => MongoClient.connect(url, option)
 - Nuestros módulos que acceden a base de datos, tienen la dependencia del módulo bbdd.
   - Esto hace más complejos los tests (hacer fakes)
   - El código está más enmarañado y se hace más dificil de mantener.
-  
+
+
 
 
 ## Patrón de dependency injection
