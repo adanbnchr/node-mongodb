@@ -47,7 +47,7 @@ npm install eslint --save-dev
 ? What line endings do you use? Windows
 ? Do you require semicolons? No
 ? What format do you want your config file to be in? JSON
-Successfully created .eslintrc.json file in C:\Users\juand\Desktop\mongodriver
+Successfully created .eslintrc.json file in ....
 ```
 
 
