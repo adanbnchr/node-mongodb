@@ -59,8 +59,8 @@ Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
 
 
 
-## Programa de ejemplo con node y ES6
-- El código anterior se podría haber escrito utilizando *arrow functions*
+## ¿Reescribimos en [ES6](http://es6-features.org/#Constants)?
+- El código anterior se podría haber escrito utilizando [arrow functions](http://es6-features.org/#ExpressionBodies)
 - Sin embargo no podemos usar módulos de ES6 para exportar
 ```
 let suma = (a, b) =>a+b
