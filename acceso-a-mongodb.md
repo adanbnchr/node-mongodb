@@ -5,36 +5,26 @@
 ## Módulos en node para acceso a MongoDB
 
 - Como hemos visto, node es altamente modular
-- Eligiremos un módulo para conexión a la base de datos
-- [mongodb](https://www.npmjs.com/package/mongodb)
-- [mongoose](https://www.npmjs.com/package/mongoose)
+- Existen dos módulos para conexión a MongoDB
+    - [mongodb](https://www.npmjs.com/package/mongodb)
+    - [mongoose](https://www.npmjs.com/package/mongoose)
 
 
 
-## ¿Qué es mongodb?
-- [mongodb](https://www.npmjs.com/package/mongodb)
-    - Es un módulo de node.js
-    - Es el driver oficial para acceso a MongoDB
-    - Es la forma más básica de acceso a una base de datos MongoDB desde Node.js
+## ¿Qué es [mongodb](https://www.npmjs.com/package/mongodb)?
+- Es un módulo de node.js (además de una base de datos)
+- Es el driver oficial para acceso a MongoDB
+- Es la forma más básica de acceso a una base de datos MongoDB desde Node.js
+    - Más sencillo de aprender
+    - Menos productivo
+    - Desde la versión 3.2 (diciembre de 2015) tiene validación
 
 
 
-## ¿Qué es mongoose?
-- [mongoose](https://www.npmjs.com/package/mongoose)
-    - Es un módulo de node.js
-    - Es un ODM (Object Document Mapper)
-
-
-
-## Ventajas de usar mongodb
-- Más sencillo de aprender
-- Desde la verasión 3.2 (diciembre de 2015) tiene validación
-
-
-
-## Desventajas de usar mongodb
-- Es más propenso a errores
-- Nos da menos (aunque con menos curva de aprendizaje)
+## ¿Qué es [mongoose](https://www.npmjs.com/package/mongoose)?
+- Es un módulo de node.js
+- Es un ODM (Object Document Mapper)
+- La forma más productiva (y algo más compleja) de trabajar con MongoDB en node.
 
 
 
@@ -42,15 +32,10 @@
 - Un ODM simplifica el código: 
     - Nuestros objetos tendrán por defecto métodos como save o remove (delete es una keyword en JavaScript)
 - Permite usar middlewares
-    - Son hooks que se ejecutan antes o después (pre o post) de determinador eventos (validate, save, remove...)
+    - Son hooks que se ejecutan antes o después (pre o post) de determinados eventos (validate, save, remove...)
 - Permite validar los documentos antes de guardarlos
     - La propia validación es un middleware previo al evento save 
-- Resumiendo, más productivo
-
-
-
-## Desventajas de usar mongoose
-- Mayor curva de aprendizaje
+- Resumiendo, más productivo (con mayor curva de aprendizaje)
 
 
 
