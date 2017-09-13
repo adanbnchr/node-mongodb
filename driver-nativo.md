@@ -326,7 +326,7 @@ var encontrarContactosPorNombre = function (db, nombre, callback) {
 
 
 ## Estructura acceso a base de datos en una aplicación
-- Para cada operación en la base de datos necesitaremos ejecutar cierto método  del objeto db.
+- Para las operaciones en la base de datos necesitamos el objeto db.
 - El método [connect](http://mongodb.github.io/node-mongodb-native/2.2/api/MongoClient.html#connect) no es [singleton](https://es.wikipedia.org/wiki/Singleton)
 - La conexión a base de datos es un proceso costoso (asíncrono) y lo suyo sería hacerlo una sola vez al arrancar el sistema, no por cada operación sobre la base de datos. 
 - Si no utilizamos el parámetro de callback, el método connect devuelve una promesa.
