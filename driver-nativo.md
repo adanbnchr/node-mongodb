@@ -234,7 +234,7 @@ var insertarContactos = function (db, contactos, callback) {
   MongoClient.connect(url, function (err, db) {
     if (err) console.log(err.message)
     else {
-      console.log("Connected successfully to server")
+      console.log('Connected successfully to server')
       createValidated(db, function () {
         insertarContactos(db, contactos, function () {
           db.close()
