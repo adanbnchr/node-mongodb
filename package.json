@@ -4,6 +4,7 @@
   "description": "Curso sobre el uso de MongoDB desde Node.js",
   "main": "index.js",
   "scripts": {
+    "run": "gitbook serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "slides": "reveal-md SUMMARY.md --separator '^\n\n\n' --verticalSeparator '^\n\n'",
     "pdf": "gitbook pdf ./ ./curso-nodejs-mongodb.pdf",
