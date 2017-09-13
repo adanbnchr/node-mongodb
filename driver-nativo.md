@@ -114,11 +114,16 @@ var createValidated = function (db, callback) {
 }
 ```
 
+
+
 - ¿Sabrías integrar esto en el código del fichero app.js?
 - Recuerda que node.js 
     - funciona de modo asíncrono
     - hay que utilizar las funciones de callback
     - ¡ojo donde cierras la base de datos, se puede quedar la colección sin hacer!
+
+
+
 
 ```
 var MongoClient = require('mongodb').MongoClient
