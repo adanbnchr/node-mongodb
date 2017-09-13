@@ -1,10 +1,12 @@
 # Crear una librería en node.js
 
 
+
 ## Librerías en node
 - Suelen ser pequeñas
 - Es un buen ejemplo de ciclo de desarrollo en node.js
 - Ayuda a tener claro el concepto de paquetes de node
+
 
 
 ## Microlibrerías
@@ -17,12 +19,14 @@
     - Control de versiones de todas ellas
 
 
+
 ## Funcionalidad librería
 
 - Obtiene una marca de cerveza y sus características
 - Obtiene una o varias marcas de cerveza al azar.
 
     
+
 ## Control de versiones
 - Utilizaremos git como control de versiones
 - Utilizaremos github como servidor git en la nube para almacenar nuestro repositorio:
@@ -31,12 +35,14 @@
     - Sigue las indicaciones de GitHub para crear el repositorio en local y asociarlo al repositorio remoto (GitHub)
 
 
+
 ## npm
 - Es el gestor de paquetes de node
 - **Debemos crear un usuario** en https://www.npmjs.com/
 - Podemos buscar los paquetes que nos interese instalar
 - Podemos publicar nuestra librería :-)
     
+
 
 ## Configuración de npm
 - Cuando creemos un nuevo proyecto nos interesa que genere automaticamente datos como el nombre o email
@@ -55,6 +61,8 @@ npm adduser
 - Los cambios se guardan en el fichero $HOME/.npmrc
 - ```npm adduser``` genera un authtoken = login automático al publicar en el registro de npm
 
+
+
 ## Versiones en node
 - Se utiliza [Semantic Versioning](http://semver.org/)
 
@@ -70,6 +78,9 @@ npm set save-exact true
 
 - ¡Puede obligarnos a cambiar el MAJOR muy a menudo! 
 
+
+
+
 ## Creamos el proyecto
 - Dentro del directorio cervezas:
 
@@ -80,6 +91,8 @@ npm init
 - El *entry-point* lo pondremos en *src/index.js*, así separaremos nuesto código fuente de los tests.
 - El resto de parámetros con sus valores por defecto
 - ¡Ya tenemos nuestro **package.json** creado!
+
+
 
 
 ## Listar todas las cervezas:
@@ -97,6 +110,8 @@ node
 undefined
 > cervezas.todas
 ```
+
+
 
 ## Ahora queremos obtener una cerveza al azar:
 - Instalamos el paquete [uniqueRandomArray](https://www.npmjs.com/package/unique-random-array)
@@ -116,6 +131,7 @@ module.exports = {
 - Comprobamos que funcione. Ojo, ¡alazar es una función!
 
 
+
 ## Subimos la librería a github
 - Necesitamos crear un **.gitignore** para no sincronizar la carpeta **node_modules**
 - Los comandos que habrá que hacer luego son:
@@ -132,6 +148,7 @@ git push
 ```
 
 
+
 ## Publicamos en npm
 ```
 npm publish
@@ -140,6 +157,7 @@ npm publish
 ```
 npm info <nombre paquete>
 ```
+
 
 
 ## Probamos nuestra librería
@@ -155,6 +173,8 @@ console.log(cervezas.todas)
 node index.js
 ```
 
+
+
 ## Versiones en GitHub
 - Nuestro paquete tiene la versión 1.0.0 en npm
 - Nuestro paquete no tiene versión en GitHub, lo haremos mediante el uso de etiquetas:
@@ -164,6 +184,7 @@ git push --tags
 ```
 - Comprobamos ahora que aparece en la opción Releases y que la podemos modificar.
 - También aparece en el botón de seleccionar branch, pulsando luego en la pestaña de tags.
+
 
 
 ## Modificar librería
@@ -183,6 +204,7 @@ module.exports = {
 ¿Lo vamos pillando?
 
 
+
 ## Versiones beta
 - Vamos a añadir una cerveza nueva, pero todavía no se está vendiendo.
 - Aumentamos nuestra versión a 1.2.0-beta.0 (nueva funcionalidad, pero en beta)
@@ -195,6 +217,8 @@ npm publish --tag beta
 ```
 npm install <nombre paquete>@beta
 ```
+
+
 
 ## Tests
 - Utilizaremos **Mocha** y **Chai**
@@ -280,6 +304,8 @@ describe('cervezas', function () {
 });
 ```
 
+
+
 ## Automatizar tareas
 - Cada vez que desarrollamos una versión de nuestra libería:
     - Ejecutar los tests
@@ -291,6 +317,8 @@ describe('cervezas', function () {
 - Vamos a intentar automatizar todo:
     - **Semantic Release** para la gestión de versiones 
     - **Travis** como CI (continuous integration)
+
+
 
 
 ## Instalación Semantic Release
@@ -311,11 +339,15 @@ semantic-release-cli setup
     - Añade la dependencia de desarrollo de Semantic Release
     
 
+
+
 ## Versiones del software
 - Utilizamos semantic versioning
 - Semantic Release se ejecuta a través de Travis CI
 - Travis CI se ejecuta al hacer un push (hay que configurarlo desde la web)
 - Los commit tienen que seguir las [reglas del equipo de Angular](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#rules)
+
+
 
 
 ## Uso de commitizen
@@ -327,6 +359,8 @@ commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
 
 - Habrá que ejecutar **git cz** en vez de **git commit** para que los commits los gestione commitizen
+
+
 
 
 ## Cambio de versión
@@ -373,6 +407,8 @@ function alazar(unidades) {
 - Podríamos añadir un issue y hacer el fix en este commit escribiendo closes #issue en el footer del commit message.
 
 
+
+
 ## Git Hooks
 - Son una manera de ejecutar scripts antes de que ocurra alguna acción
 - Sería ideal pasar los tests antes de que se hiciera el commit
@@ -393,6 +429,7 @@ npm i -D ghooks
 ```
 
 
+
 ## Coverage
 - Nos interesa que todo nuestro código se pruebe mediante tests.
 - Necesitamos una herramienta que compruebe el código mientras se realizan los tests:
@@ -407,6 +444,7 @@ istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js
 - Si ejecutamos ahora *npm test* nos ofrecerá un resumen de la cobertura de nuestros tests.
 - Por último nos crea una carpeta en el proyecto *coverage* donde podemos ver los datos, por ejemplo desde un navegador (fichero index.html)
 - ¡Ojo, recordar poner la carpeta coverage en el .gitignore!
+
 
 
 ## Check coverage
@@ -425,6 +463,8 @@ script:
  - npm run test
  - npm run check-coverage
 ```
+
+
 
 ## Gráficas
 - Utilizaremos la herramienta codecov.io:
