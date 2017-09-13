@@ -300,6 +300,7 @@ var insertarContactos = function (db, contactos, callback) {
 
 
 ## Búsqueda de registros
+
 - Se utiliza el método find del objeto collection:
 
   ```
