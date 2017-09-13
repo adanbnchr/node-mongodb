@@ -51,6 +51,8 @@
 - Mediante ```npm config --help``` vemos los comandos de configuración
 - Mediante ```npm config ls -l``` vemos los parámetros de configuración
 
+
+
 ```
 npm set init-author-name pepe
 npm set init-author-email pepe@pepe.com
