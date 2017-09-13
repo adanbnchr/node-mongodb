@@ -75,12 +75,13 @@ npm set save-exact true
 ```
 
 - Las versiones tienen el formato MAJOR.MINOR.PATCH
+    - Las versiones MINOR y PATCH guardan compatibilidad.
+    - ¡Puede obligarnos a cambiar el MAJOR muy a menudo! 
 - Cambios de versión:
-    - MAJOR: Cambios en compatibilidad de API,
-    - MINOR: Se añade funcionalidad. Se mantiene la compatibilidad.
-    - PATCH: Arreglar bugs. Se mantiene la compatibilidad.
+    - MAJOR: Cambios en compatibilidad de API
+    - MINOR: Se añade funcionalidad. 
+    - PATCH: Arreglar bugs.
 
-- ¡Puede obligarnos a cambiar el MAJOR muy a menudo! 
 
 
 
