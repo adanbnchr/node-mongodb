@@ -1,5 +1,7 @@
 # Acceso a MongoDB mediante driver nativo
 
+
+
 ## Objetivos
 - Saber realizar operaciones básicas
   - CRUD
@@ -7,10 +9,13 @@
 - Trabajar de forma correcta con el modelo asíncrono de node.js
 
 
+
 ## Referencias
 - [Web MongoDB Node.JS driver](http://mongodb.github.io/node-mongodb-native/)
 - [Manual referencia versión 2.2](http://mongodb.github.io/node-mongodb-native/2.2/)  
 - La documentación que hay a continuación está pensada para Linux/Mac. Los cambios para Windows son mínimos y evidentes.
+
+
 
 
 ## Crear el proyecto
@@ -56,6 +61,8 @@ npm install eslint --save-dev
 - [Modificamos la url si fuera necesario](http://mongodb.github.io/node-mongodb-native/2.2/tutorials/connect/)
 
 
+
+
 ## Uso de eslint
 - Creamos un fichero de configuración de eslint desde la paleta de comandos (*CTRL/COMMAND + MAYS + P*)
 - Cambiamos la configuración del fichero *.estlintrc.json* exigiendo por ejemplo que las líneas no acaben en punto y coma:
@@ -64,6 +71,8 @@ npm install eslint --save-dev
 ```
 - Observamos los errores en el editor
 - Desde la paleta de comandos le pedimos a eslint que arregle los fallos :-)
+
+
 
 
 ## Creamos una colección con validación:
@@ -149,6 +158,8 @@ var createValidated = function (db, callback) {
   db.getCollectionInfos()
   ```
   - Ojo, si la colección ya está creada no se modifica 
+
+
 
 ## Insertamos registros
 
@@ -281,8 +292,10 @@ var insertarContactos = function (db, contactos, callback) {
   ```
 
 
+
 ## Borramos registros
 - Se deja como ejercicio, utilizando el [Manual referencia](http://mongodb.github.io/node-mongodb-native/2.2/)  
+
 
 
 ## Estructura acceso a base de datos en una aplicación
@@ -290,6 +303,8 @@ var insertarContactos = function (db, contactos, callback) {
 - El método [connect](http://mongodb.github.io/node-mongodb-native/2.2/api/MongoClient.html#connect) no es [singleton](https://es.wikipedia.org/wiki/Singleton)
 - La conexión a base de datos es un proceso costoso (asíncrono) y lo suyo sería hacerlo una sola vez al arrancar el sistema, no por cada operación sobre la base de datos. 
 - Si no utilizamos el parámetro de callback, el método connect devuelve una promesa.
+
+
 
 
 ## Módulo de conexión a base de datos
@@ -355,6 +370,7 @@ module.exports.connect = () => MongoClient.connect(url, option)
 - También podemos guardar toda la configuración de nuestra app (de momento solo la bbdd en un fichero específico.
 
 
+
 ## Estructura final
 - Fichero de configuración *config.js*:
 ```
@@ -386,6 +402,7 @@ db.connect()
 ```
 
 
+
 ## ¿Evitamos el callback hell?
 - Vamos a utilizar async/await (ES8)
 - Para que nos funcione deberemos utilizar babel-node, o en producción compilarlo.
@@ -406,6 +423,8 @@ npm i -D babel-polyfill
   "plugins": ["transform-async-to-generator"]
 }
 ```
+
+
 
 ## Resultado final con JavaScript 2017
 
