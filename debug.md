@@ -37,7 +37,7 @@ Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
 ## Módulo de ejemplo
 * Fichero *suma.js*
   ```
-  let suma = function(a, b) {
+  var suma = function(a, b) {
     return a+b
   }
   module.exports = suma
@@ -53,7 +53,7 @@ Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
   ```
   // fichero app.js
   let suma = require('./suma.js')
-  console.log (suma(3,5))
+  console.log ('La suma de 3 y 5 es ' + suma(3,5))
   ```
 * Ejecutamos el código anterior mediante *node app.js*
 
@@ -71,8 +71,9 @@ module.exports = suma
 
 - Y lógicamente tampoco para importar:
 ```
-let suma = require('./suma.js')
 // import suma from './suma'
+let suma = require('./suma.js')
+console.log (`La suma de 3 y 5 es ${suma(3,5)}`)
 ```
 
 
