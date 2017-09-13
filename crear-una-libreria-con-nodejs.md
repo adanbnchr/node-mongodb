@@ -78,7 +78,7 @@ npm set save-exact true
 - Cambios de versión:
     - MAJOR: Cambios en compatibilidad de API,
     - MINOR: Se añade funcionalidad. Se mantiene la compatibilidad.
-    - PATCH: Se solucionan bug. Se mantiene compatibilidad.
+    - PATCH: Arreglar bugs. Se mantiene la compatibilidad.
 
 - ¡Puede obligarnos a cambiar el MAJOR muy a menudo! 
 
