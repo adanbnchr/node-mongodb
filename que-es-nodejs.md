@@ -38,6 +38,7 @@
 
 
 
+
 ## Desventajas
 - Trabajar con código asíncrono hace que a veces el código no sea excesivamente legible
 - Imagina que guardamos un registro de los accesos de los usuarios a nuestra app:
