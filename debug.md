@@ -2,6 +2,16 @@
 
 
 
+
+## Programa de ejemplo con node
+
+* Vamos a utilizar un ejemplo muy sencillo que nos sirva para:
+* Aprender a hacer debug
+* Conocer como funcionan los módulos en nodejs
+* Familiarizarnos con el editor de código
+
+
+
 ## Configuración del linter
 - Creamos carpeta para el proyecto y generamos el fichero de configuración del linter
 
@@ -23,16 +33,7 @@ Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
 
 
 
-## Programa de ejemplo con node
-
-* Vamos a utilizar un ejemplo muy sencillo que nos sirva para:
-  * Aprender a hacer debug
-  * Conocer como funcionan los módulos en nodejs
-  * Familiarizarnos con el editor de código
-
-
-
-
+## Código de ejemplo
 * Fichero *suma.js*
   ```
   let suma = function(a, b) {
