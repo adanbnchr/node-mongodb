@@ -88,7 +88,7 @@ npm set save-exact true
 
 ## Creamos el proyecto
 
-- Dentro del directorio cervezas:
+- Creamos directorio cervezas y accedemos para inicializar el proyecto:
 ```
 npm init
 ```
