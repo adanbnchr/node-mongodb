@@ -30,6 +30,7 @@
     - Al ser asíncrono podremos tener muchas sesiones concurrentes
 
 
+
 - Es monohilo
    - Utiliza un solo procesador
    - Si queremos usar toda la potencia de la CPU, tendremos que levantar varias instancias de node y utilizar un balanceador de carga ([por ejemplo con pm2](https://github.com/Unitech/pm2))
