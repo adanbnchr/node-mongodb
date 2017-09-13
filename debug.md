@@ -4,6 +4,7 @@
 
 ## Configuración del linter
 - Creamos carpeta para el proyecto y generamos el fichero de configuración del linter
+
 ```
 juandaniel@juanda-portatil:~/Desktop/debug-node|
 ⇒  eslint --init
