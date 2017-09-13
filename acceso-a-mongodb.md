@@ -25,6 +25,7 @@
 - Es un módulo de node.js
 - Es un ODM (Object Document Mapper)
 - La forma más productiva (y algo más compleja) de trabajar con MongoDB en node.
+- Está construido a partir del driver oficial.
 
 
 
