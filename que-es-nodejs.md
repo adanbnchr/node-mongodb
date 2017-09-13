@@ -53,8 +53,11 @@ trackUser =  function(userId) {
   });
 ```
 
+
+
 - Tenemos 3 funciones anidadas en una simple operación.
 - Esto es lo que se conoce como [callback hell](https://strongloop.com/strongblog/node-js-callback-hell-promises-generators/)
+
 
 
 ## Evitar el callback en el navegador
