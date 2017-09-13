@@ -94,6 +94,9 @@ trackUser =  function(userId) {
 
 ## npm
 - Es el gestor de paquetes de node
+  - Gestiona las dependencias de mi aplicación (versiones)
+  - Instala paquetes
+  - Publica paquetes en [npm Orgs](https://www.npmjs.com/)
 - Idea similar a Maven en Java o Composer en PHP
-- Vamos a crear una librería en node para ver su uso.
+
 
