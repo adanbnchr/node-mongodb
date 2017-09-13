@@ -108,6 +108,11 @@ module.exports = {
     todas: cervezas
 }
 ```
+- Descargamos el fichero *cervezas.json*
+
+```
+wget   https://raw.githubusercontent.com/juanda99/proyecto_web_basica/master/cervezas.json -OutFile cervezas.json
+```
 - Abrimos una consola y comprobamos que funcione nuestra librería:
 ```
 node
