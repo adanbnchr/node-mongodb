@@ -56,19 +56,19 @@ Successfully created .eslintrc.json file in ....
 - Creamos un fichero de conexión (app.js):
 
 ```
-var MongoClient = require('mongodb').MongoClient;
+var MongoClient = require('mongodb').MongoClient
 
 // Connection URL
-var url = 'mongodb://localhost:27017/test';
+var url = 'mongodb://localhost:27017/test'
 
 // Use connect method to connect to the server
 MongoClient.connect(url, function(err, db) {
-  if (err) console.log(err.message);
+  if (err) console.log(err.message)
   else {
-    console.log("Connected successfully to server");
-    db.close();
+    console.log('Connected successfully to server')
+    db.close()
   }
-});
+})
 ```
 
 
