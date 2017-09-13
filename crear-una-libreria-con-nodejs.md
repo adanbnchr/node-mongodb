@@ -53,6 +53,7 @@
 
 
 
+- Insertamos nuestros datos:
 ```
 npm set init-author-name pepe
 npm set init-author-email pepe@pepe.com
