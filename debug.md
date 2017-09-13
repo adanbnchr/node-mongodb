@@ -54,6 +54,8 @@ Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
   let suma = require('./suma.js')
   console.log (suma(3,5))
   ```
+* Ejecutamos el código anterior mediante *node app.js*
+
 
 
 
