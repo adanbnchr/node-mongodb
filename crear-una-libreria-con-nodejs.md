@@ -68,8 +68,8 @@ npm adduser
 
 
 ## Versiones en node
-- Se utiliza [Semantic Versioning](http://semver.org/)
 
+- Se utiliza [Semantic Versioning](http://semver.org/)
 ```
 npm set save-exact true
 ```
