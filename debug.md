@@ -80,7 +80,7 @@ let suma = require('./suma.js')
 
 * Utilizando la consola
 * Utilizando Chrome Developer Tools
-* Mediante Visual Studioç
+* Mediante Visual Studio
 
 
 
