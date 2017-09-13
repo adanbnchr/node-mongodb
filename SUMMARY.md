@@ -24,3 +24,7 @@
 * [Driver nativo](driver-nativo.md)
 * [Mongoose](mongoose.md)
 
+## Caso práctico
+
+* [Creación de una API REST](caso-practico/creacion-de-una-api-rest.md)
+
