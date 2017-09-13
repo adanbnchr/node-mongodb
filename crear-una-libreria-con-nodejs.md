@@ -87,6 +87,7 @@ npm set save-exact true
 
 
 ## Creamos el proyecto
+
 - Dentro del directorio cervezas:
 
 ```
