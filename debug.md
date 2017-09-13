@@ -14,6 +14,7 @@
 
 ## Configuración del linter
 - Creamos carpeta para el proyecto y generamos el fichero de configuración del linter
+- Usamos JSON en vez de YAML por el asistente de Visual Studio Code
 
 ```
 juandaniel@juanda-portatil:~/Desktop/debug-node|
@@ -27,7 +28,7 @@ juandaniel@juanda-portatil:~/Desktop/debug-node|
 ? What quotes do you use for strings? Single
 ? What line endings do you use? Unix
 ? Do you require semicolons? No
-? What format do you want your config file to be in? YAML
+? What format do you want your config file to be in? JSON
 Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
 ```
 
