@@ -117,7 +117,7 @@ let suma = require('./suma.js')
     - Experimental en v6.x
   - Mediante un paquete adicional, **node-inspector**
     - Deprecated en v7.x
-    - No lo veremos
+
 
 
 
@@ -141,6 +141,8 @@ node --debug-brk --inspect app.js
 ```
 
 * Abrimos el enlace con Chrome y se inspecciona el código mediante sus herramientas de desarrollo.
+
+
 
 
 ## Debug con node-inspector y Chrome
