@@ -177,7 +177,7 @@ var createValidated = function (db, callback) {
 
 
 
-## Insertamos registros
+## Datos para la colección
 
 - Queremos que a la vez que se crea la colección, se inserten unos registros de ejemplo.
 
@@ -204,7 +204,10 @@ const contactos = [
   }
 ]
 ```
-- Función para insertar contactos:
+
+
+## Función para insertar contactos
+
 ```
 var insertarContactos = function (db, contactos, callback) {
   // Obtenemos la colección
@@ -216,7 +219,12 @@ var insertarContactos = function (db, contactos, callback) {
   })
 }
 ```
-- Intenta ingegrarlo y probar que funcione. Podría quedar así:
+
+- Intenta integrarlo y prueba que funcione. 
+
+
+
+## Código con la solución
   
   ```
   var MongoClient = require('mongodb').MongoClient
