@@ -52,6 +52,6 @@ miCerveza.save(function (err, miCerveza) {
 
 ## ¿Qué vamos a utilizar?
 - Utilizaremos mongodb para ver las operaciones básicas [siguiendo la documentación](http://mongodb.github.io/node-mongodb-native/2.2/)
-- Posteriormente utilizaremos mongoose marcando sus ventajas en un ejemplo típico y habitual, el login de usuarios
+- Posteriormente utilizaremos mongoose destacando sus ventajas en un ejemplo típico y habitual, el login de usuarios
 
 
