@@ -164,10 +164,7 @@ node --debug-brk --inspect app.js
 
 ## Debug en Visual Studio Code
 
-* Primero hay que ir a  la vista de debug, pulsando el icono correspondiente:  
-  ![](/img/icono-debug.png)
-  
-* Para hacer debug necesitamos un fichero de configuración _launch.json_, que se obtiene pulsandos en la ruleta
+* En la vista debug creamos un fichero de configuración _launch.json_ pulsando en la ruleta
 ![](/img/sublime-debug.png)
 
 * Ya podemos hacer debug como en cualquier otro programa:
