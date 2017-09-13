@@ -46,8 +46,6 @@ miCerveza.save(function (err, miCerveza) {
     - Son hooks que se ejecutan antes o después (pre o post) de determinados eventos (validate, save, remove...)
 - Permite validar los documentos antes de guardarlos
     - La propia validación es un middleware previo al evento save 
-- Resumiendo, más productivo (con mayor curva de aprendizaje)
-
 
 
 
