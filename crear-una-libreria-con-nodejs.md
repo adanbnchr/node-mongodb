@@ -74,9 +74,9 @@ npm adduser
 npm set save-exact true
 ```
 
-- Las versiones tienen el formato MAJOR.MINOR.PATCH
-    - Las versiones MINOR y PATCH guardan compatibilidad.
-    - ¡Puede obligarnos a cambiar el MAJOR muy a menudo! 
+- Formato MAJOR.MINOR.PATCH
+    - MINOR y PATCH guardan compatibilidad.
+    - El MAYOR puede crecer mucho.
 - Cambios de versión:
     - MAJOR: Cambios en compatibilidad de API
     - MINOR: Se añade funcionalidad. 
