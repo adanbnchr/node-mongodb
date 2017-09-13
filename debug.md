@@ -168,13 +168,16 @@ node --debug-brk --inspect app.js
   ![](/assets/icono-debug.png)
   
 * Para hacer debug necesitamos un fichero de configuración _launch.json_, que se obtiene pulsandos en la ruleta
-
 ![](/assets/sublime-debug.png)
+
+* Podemos usar configuraciones adicionales usando Intellisense dentro del campo *Configuration* del JSON.
 
 * Ya podemos hacer debug como en cualquier otro programa:
   * Play para empezar
   * Break points pulsando a la izquierda de la numeración de lineas del código
   * Puedes pulsar con el botón derecho y poner breakpoints condicionales.
+  
+* En la pestaña de *Debug Console* podemos interaccionar con el fuente.
 
 * [Buen tutorial](https://www.youtube.com/watch?v=hfpkMyvSOp4)
 
