@@ -100,7 +100,7 @@ let suma = require('./suma.js')
 
 ## Teclas de acceso rápido  
 * Ir al siguiente breackpoint: **c**
-* Ir a la siguiente línea de código en el mismo fichero: **n**
+* Ir a la siguiente línea de código: **n**
 * Entrar en función: **s**
 * Salir de función: **o**
 
