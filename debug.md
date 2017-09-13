@@ -14,7 +14,7 @@
 
 ## Configuración del linter
 - Creamos carpeta para el proyecto y generamos el fichero de configuración del linter
-- El JSON tiene asistente de Visual Studio Code (YAML no)
+- El JSON tiene intellisense en el editor (YAML no)
 
 ```
 juandaniel@juanda-portatil:~/Desktop/debug-node|
