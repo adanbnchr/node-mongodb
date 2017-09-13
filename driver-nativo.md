@@ -357,6 +357,8 @@ module.exports.get = () => {
 }
 ```
 
+
+
 - La promesa la construimos "a mano"
 - Si el método connect no tiene callback devuelve directamente una promesa, así queda más corto:
 ```
@@ -381,12 +383,18 @@ module.exports.connect = () => MongoClient.connect(url, option)
       });
  ```
 
+
+
 - Cualquier módulo que acceda a la base de datos:
 
   ```
   const db = require('./bbdd');
   db.get().find(...)...
   ```
+
+
+
+## Patrón de dependency injection
 
 - Nuestros módulos que acceden a base de datos, tienen la dependencia del módulo bbdd.
   - Esto hace más complejos los tests (hacer fakes)
