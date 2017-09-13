@@ -88,7 +88,7 @@ MongoClient.connect(url, function(err, db) {
 
 
 ## Creamos una colección con validación:
-- [Siguiendo la documentación de nuestra API](http://mongodb.github.io/node-mongodb-native/2.2/api/Db.html#createCollection), crearemos una colección con validación:
+- [Siguiendo la documentación oficial](http://mongodb.github.io/node-mongodb-native/2.2/api/Db.html#createCollection), crearemos una colección con validación:
 
 ```
 var createValidated = function (db, callback) {
@@ -112,9 +112,6 @@ var createValidated = function (db, callback) {
     }
   )
 }
-
-
-
 ```
 
 - ¿Sabrías integrar esto en el código del fichero app.js?
