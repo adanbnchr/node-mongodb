@@ -495,6 +495,8 @@ import 'babel-polyfill'
 })()
 ```
 
+
+
 - Fichero bbdd.js
 ```
 import {MongoClient} from 'mongodb'
@@ -503,12 +505,20 @@ const connect = () =>  MongoClient.connect(bbdd.url, bbdd.options)
 export default connect
 ```
 
+
+
+## Ejecución
+
 - Si queremos ejecutarlo habrá que utilizar babel-node:
 
-  ```
-  node_modules/.bin/babel-node app.js
-  ```
-  
+```
+node_modules/.bin/babel-node app.js
+```
+
+
+
+## Compilación
+
 - Otra opción sería compilarlo. Lo mejor es poner cualquiera de estas opciones mediante scripts de npm para ahorrarnos todo el path:
 
 ```
