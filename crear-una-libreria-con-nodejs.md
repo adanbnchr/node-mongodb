@@ -44,6 +44,7 @@
     
 
 
+
 ## Configuración de npm
 - Cuando creemos un nuevo proyecto nos interesa que genere automaticamente datos como el nombre o email
 - Ver [documentación para su configuación](https://docs.npmjs.com/) o mediante consola (```npm --help```)	:
