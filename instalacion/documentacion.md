@@ -13,10 +13,11 @@ git clone https://github.com/juanda99/node-mongodb
 cd node-mongodb
 node_modules/.bin/gitbook install
 npm install
-npm run slides
-npm run pdf
-npm run epub
-npm run mobi
+npm run slides # para verlo como diapositivas
+npm run pdf # generar un pdf
+npm run epub # generar doc para ebook
+npm run mobi # generar para kindle
+npm start # para verlo en navegador
 ```
 
 
