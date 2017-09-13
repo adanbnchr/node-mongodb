@@ -351,6 +351,7 @@ module.exports.connect = () => MongoClient.connect(url, option)
 ```
 
 
+
 ## Estructura aplicación
 - Cargamos el módulo de base de datos y si todo va bien, arrancamos el resto de la aplicación
 
@@ -418,17 +419,25 @@ db.connect()
 
 
 ## ¿Evitamos el callback hell?
-- Vamos a utilizar async/await (ES8)
+- En la documentación hay ejemplos con:
+  - Promesas
+  - Generadores y el módulo co
+- Para cambiar lo vamos a utilizar async/await (ES8)
 - Para que nos funcione deberemos utilizar babel-node, o en producción compilarlo.
   ```
   npm i -D babel-cli
   ```
+  
+  
+  
 - Además de la herramienta en sí, necesitamos instalar los plugins que hacen las traducciones de código "nuevo" a código "viejo". A veces es conveniente instalar un preset (colección de plugins)
 ```
 npm install --save-dev babel-plugin-transform-async-to-generator
 npm i -D babel-preset-es2015
 npm i -D babel-polyfill
 ```
+
+
 
 - Una vez instalados los módulos configuramos babel para que los use, creando un fichero .babelrc con el siguiente código:
 ```
