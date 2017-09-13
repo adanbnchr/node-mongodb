@@ -1,9 +1,6 @@
 # Acceso a MongoDB
 
 
-## Objetivos
-
-
 ## Módulos de node para acceso a MongoDB
 
 - Como hemos visto, node es altamente modular
