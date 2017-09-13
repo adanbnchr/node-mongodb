@@ -76,6 +76,8 @@ MongoClient.connect(url, function(err, db) {
 
 ## Probar conexión
 
+- Ejecutamos el fichero anterior mediante node:
+
   ```
   node app.js
   ```
