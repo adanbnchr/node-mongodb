@@ -31,6 +31,7 @@
 ## Ventajas de usar mongoose
 - Un ODM simplifica el código: 
     - Nuestros objetos tendrán por defecto métodos como save o remove (delete es una keyword en JavaScript)
+    
 ```
 var miCerveza = new Cerveza({ name: 'Ambar' });
 miCerveza.save(function (err, miCerveza) {
