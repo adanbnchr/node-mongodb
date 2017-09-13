@@ -298,7 +298,8 @@ var insertarContactos = function (db, contactos, callback) {
   ```
 
 
-## Búscamos registros
+
+## Búsqueda de registros
 - Se utiliza el método find del objeto collection:
 
   ```
@@ -317,8 +318,9 @@ var insertarContactos = function (db, contactos, callback) {
 
 
 
-## Borramos registros
+## Borrar registros
 - Se deja como ejercicio, utilizando el [Manual referencia](http://mongodb.github.io/node-mongodb-native/2.2/)  
+
 
 
 
