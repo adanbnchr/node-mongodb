@@ -33,6 +33,25 @@ npm install eslint --save-dev
 
 
 
+## Configurar eslint
+
+```
+./node_modules/.bin/eslint --init
+? How would you like to configure ESLint? Answer questions about your style
+? Are you using ECMAScript 6 features? Yes
+? Are you using ES6 modules? Yes
+? Where will your code run? Node
+? Do you use JSX? No
+? What style of indentation do you use? Spaces
+? What quotes do you use for strings? Single
+? What line endings do you use? Windows
+? Do you require semicolons? No
+? What format do you want your config file to be in? JSON
+Successfully created .eslintrc.json file in C:\Users\juand\Desktop\mongodriver
+```
+
+
+
 ## Crear conexión
 - Creamos un fichero de conexión (app.js):
 
