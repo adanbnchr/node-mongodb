@@ -142,7 +142,7 @@ node --debug-brk --inspect app.js
 ```
 
 * [Abrimos mejor con Chrome la url *about:inspect*](https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27) 
-* Utilizamos las Chrome developer tools
+* Pulsando *ESC* tenemos un intérprete de JS para interaccionar con el código
 
 
 
