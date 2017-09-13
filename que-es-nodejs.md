@@ -15,8 +15,8 @@
 - Tener el mismo lenguaje en cliente y servidor
   - Permite a cualquier persona desarrollar en backend o en frontend
   - Permite reusar código o incluso mover código de cliente a servidor o al revés
-
 - Está orientado a eventos y utiliza un modelo asíncrono (propio de JavaScript).
+
 
 
 - Al contrario que en el navegador, encontramos muchas llamadas asíncronas: 
@@ -24,7 +24,6 @@
     - Lectura y escritura de ficheros
     - Ejecución de cálculos en el servidor
     - ....
-
 
 - Llamadas síncronas en servidor serían fatales:
     - ¡Bloqueariamos las conexiones al servidor hasta que acabase la instrucción bloqueante!
