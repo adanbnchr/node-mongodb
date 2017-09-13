@@ -145,6 +145,7 @@ node --debug-brk --inspect app.js
 
 
 
+
 ## Debug con node-inspector y Chrome
 
 * Instalo el paquete node-inspector:
