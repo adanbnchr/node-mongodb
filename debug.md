@@ -175,6 +175,9 @@ node --debug-brk --inspect app.js
 * En la pestaña de *Debug Console* podemos interaccionar con el fuente.
 
 
+
+
+
 {% youtube src="https://www.youtube.com/watch?v=hfpkMyvSOp4" %}{% endyoutube %}
 
 
