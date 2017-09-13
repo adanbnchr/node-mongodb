@@ -33,7 +33,7 @@ Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
 
 
 
-## Código de ejemplo
+## Módulo de ejemplo
 * Fichero *suma.js*
   ```
   let suma = function(a, b) {
@@ -46,7 +46,7 @@ Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
 
 
 
-
+## Aplicación que usa el módulo
 * **require**: para cargar los módulos (librerías) que necesito.
 
   ```
