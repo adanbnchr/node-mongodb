@@ -29,6 +29,10 @@ Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
   * Aprender a hacer debug
   * Conocer como funcionan los módulos en nodejs
   * Familiarizarnos con el editor de código
+
+
+
+
 * Fichero *suma.js*
   ```
   let suma = function(a, b) {
@@ -37,9 +41,10 @@ Successfully created .eslintrc.yml file in /Users/juandaniel/Desktop/debug-node
   module.exports = suma
   ```
 
-
-
 * **module.exports** indica las partes de este módulo \(fichero\) que se pueden exportar \(utilizar desde otro fichero\).
+
+
+
 
 * **require**: para cargar los módulos (librerías) que necesito.
 
