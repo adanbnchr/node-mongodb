@@ -95,11 +95,14 @@ let suma = require('./suma.js')
   ```
   debugger;
   ```
-* Las teclas de acceso rápido son:
-  * Hasta el siguiente breackpoint: c
-  * Hasta la siguiente línea de código en el mismo fichero: n
-  * Entrar en función: s
-  * Salir de función: o
+
+
+
+## Teclas de acceso rápido  
+* Hasta el siguiente breackpoint: c
+* Hasta la siguiente línea de código en el mismo fichero: n
+* Entrar en función: s
+* Salir de función: o
 
 
 
