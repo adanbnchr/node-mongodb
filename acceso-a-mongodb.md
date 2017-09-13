@@ -46,7 +46,7 @@ miCerveza.save(function (err, miCerveza) {
 - Permite usar middlewares
     - Son hooks que se ejecutan antes o después (pre o post) de determinados eventos (validate, save, remove...)
     - La propia validación es un middleware previo al evento save 
-- Getters, setters, virtual fields...
+- Getters, setters, atributos virtuales...
 
 
 
