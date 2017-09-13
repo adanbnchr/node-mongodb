@@ -5,7 +5,7 @@
 ## Objetivos
 - Conocer las características generales del lenguage node.js
 - Acceso a base de datos node.js desde MongoDB
-    - Ver diferentes métodos de acceso a MongoDB
+    - Ver diferentes drivers de acceso a MongoDB
     - Configurar url de acceso a MongoDB
     - Realizar un CRUD básico
 
@@ -22,6 +22,7 @@
     - Publicación de módulos mediante npm
     
 
+
     
 - Acceso a bases de datos MongoDB (2h 30 min)
     - Tipos de acceso a MongoDB
@@ -29,6 +30,7 @@
         - ODM
     - Utilizar **MongoDB** para acceder a datos
     - Utilizar **Mongoose** para acceder a datos
+
 
 
 
