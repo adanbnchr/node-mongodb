@@ -53,7 +53,8 @@ Successfully created .eslintrc.json file in ....
 
 
 ## Crear conexión
-- Creamos un fichero de conexión (app.js):
+- Creamos un fichero de conexión (app.js)
+- [Modificamos la url si fuera necesario](http://mongodb.github.io/node-mongodb-native/2.2/tutorials/connect/)
 
 ```
 var MongoClient = require('mongodb').MongoClient
@@ -78,20 +79,8 @@ MongoClient.connect(url, function(err, db) {
   ```
   node app.js
   ```
-  
-- [Modificamos la url si fuera necesario](http://mongodb.github.io/node-mongodb-native/2.2/tutorials/connect/)
 
-
-
-
-## Uso de eslint
-- Creamos un fichero de configuración de eslint desde la paleta de comandos (*CTRL/COMMAND + MAYS + P*)
-- Cambiamos la configuración del fichero *.estlintrc.json* exigiendo por ejemplo que las líneas no acaben en punto y coma:
-```
-  "semi": ["error", "never"]
-```
-- Observamos los errores en el editor
-- Desde la paleta de comandos le pedimos a eslint que arregle los fallos :-)
+- ¿Qué mensaje nos muestra la consola?
 
 
 
