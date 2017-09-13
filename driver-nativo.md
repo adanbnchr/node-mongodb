@@ -394,12 +394,15 @@ module.exports.connect = () => MongoClient.connect(url, option)
 
 
 
-## Patrón de dependency injection
+## Problemática
 
 - Nuestros módulos que acceden a base de datos, tienen la dependencia del módulo bbdd.
   - Esto hace más complejos los tests (hacer fakes)
   - El código está más enmarañado y se hace más dificil de mantener.
+  
 
+
+## Patrón de dependency injection
 - Podemos utilizar un patrón de código llamado Dependency Injection:
   *En vez de crear la dependencia en mi módulo o llamar a algún objeto para obtener mi dependencia, las ponemos como algo externo (parámetro) y el problema se va del módulo.*
 
