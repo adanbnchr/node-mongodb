@@ -71,13 +71,15 @@ trackUser =  function(userId) {
 - Ver [Async / Await](http://rossboucher.com/await/#/1)
 
 
+
 ## Compatiblidad node con ES6 y más allá
 
 - [El soporte de ES6 en node es limitado](http://node.green/)
   - Se pude añadir el flag --harmony
   - Se puede utilizar un transpiler, que genere código compatible. El más habitual es [babel](https://babeljs.io/)
 - En el navegador tenemos el mismo problema (mismo motor...): es práctica extendida el uso de transpilers.
-  
+
+
 
 ## Hola Mundo en node
 - Editamos un fichero en JavaScript, *holaMundo.js*:
@@ -87,6 +89,7 @@ trackUser =  function(userId) {
   ```
 - Lo ejecutamos mediante *node holaMundo.js*
 - Si escribimos *node* sin más, podemos acceder a la consola de node, un intérprete de JavaScript, similar al que tenemos en el navegador
+
 
 
 ## npm
