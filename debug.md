@@ -140,7 +140,7 @@ To start debugging, open the following URL in Chrome:
 node --debug-brk --inspect app.js
 ```
 
-* El enlace que nos proporciona se abre con el navegador Chrome y se puede inspeccionar el código mediante sus herramientas de desarrollo.
+* Abrimos el enlace con Chrome y se inspecciona el código mediante sus herramientas de desarrollo.
 
 
 ## Debug con node-inspector y Chrome
