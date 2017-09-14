@@ -458,6 +458,7 @@ db.connect()
 - No hay ejemplos con async/await (ES8)
 
 
+
 ## Problemática
 - Falta compatibilidad con node
 - Para que nos funcione deberemos utilizar babel-node, o en producción compilarlo.
