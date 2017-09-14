@@ -451,11 +451,11 @@ db.connect()
 
 
 
-## ¿Evitamos el callback hell?
+## ¿Usamos async/await?
 - En la documentación hay ejemplos con:
   - Promesas
   - Generadores y el módulo co
-- Para cambiar lo vamos a utilizar async/await (ES8)
+- No hay ejemplos con async/await (ES8)
 - Para que nos funcione deberemos utilizar babel-node, o en producción compilarlo.
   ```
   npm i -D babel-cli
