@@ -13,7 +13,6 @@
 ## Referencias
 - [Web MongoDB Node.JS driver](http://mongodb.github.io/node-mongodb-native/)
 - [Manual referencia versión 2.2](http://mongodb.github.io/node-mongodb-native/2.2/)  
-- La documentación que hay a continuación está pensada para Linux/Mac. Los cambios para Windows son mínimos y evidentes.
 
 
 
@@ -371,7 +370,8 @@ module.exports.connect = () => MongoClient.connect(url, option)
 - Cargamos el módulo de base de datos y si todo va bien, arrancamos el resto de la aplicación
 
 ```
-  // sería nuestro fichero index.js o app.js
+  
+// sería nuestro fichero index.js o app.js
   const db = require('./bbdd');
   db.connect()
       .then(() => console.log('database connected'))
