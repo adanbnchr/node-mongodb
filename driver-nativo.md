@@ -13,7 +13,6 @@
 ## Referencias
 - [Web MongoDB Node.JS driver](http://mongodb.github.io/node-mongodb-native/)
 - [Manual referencia versión 2.2](http://mongodb.github.io/node-mongodb-native/2.2/)  
-- La documentación que hay a continuación está pensada para Linux/Mac. Los cambios para Windows son mínimos y evidentes.
 
 
 
