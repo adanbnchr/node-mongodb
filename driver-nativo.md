@@ -424,6 +424,7 @@ module.exports = app
 
 
 - Módulo de conexión a la base de datos:
+
 ```
 var MongoClient = require('mongodb').MongoClient
 const bbdd = require('./config')
@@ -433,6 +434,7 @@ module.exports.connect = () =>  MongoClient.connect(bbdd.url, bbdd.options)
 
 
 - Módulo principal (main):
+
 ```
 const db = require('./bbdd')
 db.connect()
@@ -462,6 +464,7 @@ db.connect()
   
   
 - Además de la herramienta en sí, necesitamos instalar los plugins que hacen las traducciones de código "nuevo" a código "viejo". A veces es conveniente instalar un preset (colección de plugins)
+
 ```
 npm install --save-dev babel-plugin-transform-async-to-generator
 npm i -D babel-preset-es2015
@@ -471,6 +474,7 @@ npm i -D babel-polyfill
 
 
 - Una vez instalados los módulos configuramos babel para que los use, creando un fichero .babelrc con el siguiente código:
+
 ```
 {
   "presets": ["es2015"],
@@ -505,6 +509,7 @@ import 'babel-polyfill'
 
 
 - Fichero bbdd.js
+
 ```
 import {MongoClient} from 'mongodb'
 import bbdd from './config.js'
