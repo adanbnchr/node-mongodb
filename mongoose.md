@@ -1,4 +1,57 @@
-# Acceso a MongoDB mediante Mongoose (ODM)
+# Acceso a MongoDB mediante ODM
+
+
+
+## Objetivos
+- Saber realizar operaciones básicas
+  - CRUD
+- Entender el concepto de ODM
+- Familiarizarnos con la documentación y saber usar la API del driver
+- Apreciar "las vitaminas" que aporta Mongoose
+
+
+
+## Referencias
+- [Web Mongoose](http://mongoosejs.com/docs/guide.html)
+
+
+
+
+## Crear el proyecto
+- Creamos la carpeta para nuestro proyecto llamada mongodbDriver
+- Inicializamos nuestro proyecto mediante el comando **npm init**
+- Instalamos nuestras dependencias (mongodb y eslint)
+
+``` 
+mkdir mongodbDriver
+cd mongodbDriver
+npm init
+npm install mongodb --save
+npm install eslint --save-dev
+```
+
+
+
+## Configurar eslint
+
+```
+./node_modules/.bin/eslint --init
+? How would you like to configure ESLint? Answer questions about your style
+? Are you using ECMAScript 6 features? Yes
+? Are you using ES6 modules? Yes
+? Where will your code run? Node
+? Do you use JSX? No
+? What style of indentation do you use? Spaces
+? What quotes do you use for strings? Single
+? What line endings do you use? Windows
+? Do you require semicolons? No
+? What format do you want your config file to be in? JSON
+Successfully created .eslintrc.json file in ....
+```
+
+
+
+
 
 
 ## Proyecto MongoDB
