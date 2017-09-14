@@ -460,7 +460,7 @@ db.connect()
 
 
 ## Problemática
-- Falta compatibilidad con node
+- [Falta compatibilidad con node](http://node.green/)
 - Para que nos funcione deberemos utilizar babel-node, o en producción compilarlo.
   ```
   npm i -D babel-cli
