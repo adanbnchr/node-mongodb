@@ -456,14 +456,15 @@ db.connect()
   - Promesas
   - Generadores y el módulo co
 - No hay ejemplos con async/await (ES8)
+
+
+## Problemática
+- Falta compatibilidad con node
 - Para que nos funcione deberemos utilizar babel-node, o en producción compilarlo.
   ```
   npm i -D babel-cli
   ```
-  
-  
-  
-- Además de la herramienta en sí, necesitamos instalar los plugins que hacen las traducciones de código "nuevo" a código "viejo". A veces es conveniente instalar un preset (colección de plugins)
+- Además necesitamos instalar los plugins que hacen las traducciones de código "nuevo" a código "viejo". A veces es conveniente instalar un preset (colección de plugins)
 
 ```
 npm install --save-dev babel-plugin-transform-async-to-generator
