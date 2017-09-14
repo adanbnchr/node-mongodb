@@ -419,12 +419,18 @@ const app = {
 }
 module.exports = app
 ```
+
+
+
 - Módulo de conexión a la base de datos:
 ```
 var MongoClient = require('mongodb').MongoClient
 const bbdd = require('./config')
 module.exports.connect = () =>  MongoClient.connect(bbdd.url, bbdd.options) 
 ```
+
+
+
 - Módulo principal (main):
 ```
 const db = require('./bbdd')
