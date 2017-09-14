@@ -533,7 +533,8 @@ node_modules/.bin/babel-node app.js
 
 ## Compilación
 
-- Otra opción sería compilarlo. Lo mejor es poner cualquiera de estas opciones mediante scripts de npm para ahorrarnos todo el path:
+- Otra opción sería compilarlo. ç
+- Introducimos los scripts en el fichero package.json (así nos ahorramos el PATH):
 
 ```
   "scripts": {
@@ -542,9 +543,6 @@ node_modules/.bin/babel-node app.js
   },
 ```
 
-- Ahora se ejecutaría mediante *npm run start* o *npm run build*.
-- npm busca los ejecutables por defecto dentro de la carpeta *node_modules/bin*
-
-
+- Ejecución mediante *npm run start* o *npm run build*.
 - Otra opción utilizar una versión de node.js más actual (no LTS)
 
