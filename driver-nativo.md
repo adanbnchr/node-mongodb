@@ -412,6 +412,7 @@ module.exports.connect = () => MongoClient.connect(url, option)
 
 ## Estructura final
 - Fichero de configuración *config.js*:
+
 ```
 const app = {
   url: 'mongodb://localhost:27017/test',
