@@ -404,8 +404,7 @@ module.exports.connect = () => MongoClient.connect(url, option)
 
 
 ## Patrón de dependency injection
-- Podemos utilizar un patrón de código llamado Dependency Injection:
-  *En vez de crear la dependencia en mi módulo o llamar a algún objeto para obtener mi dependencia, las ponemos como algo externo (parámetro) y el problema se va del módulo.*
+- *En vez de crear la dependencia en mi módulo o llamar a algún objeto para obtener mi dependencia, las ponemos como algo externo (parámetro) y el problema se va del módulo.*
 
 - También podemos guardar toda la configuración de nuestra app (de momento solo la bbdd en un fichero específico.
 
