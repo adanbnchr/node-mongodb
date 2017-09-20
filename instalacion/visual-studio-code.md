@@ -156,3 +156,19 @@
 - *ExpressSnippet*: para autocompletado de Express
 - [npm intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense): para autocompletado de los módulos que se instalan vía require.
 - [Search node modules](https://marketplace.visualstudio.com/items?itemName=jasonnutter.search-node-modules): para buscar en la carpeta node_modules (a menudo se "elimina" del editor de código).
+
+
+
+## Settings para node
+- Eliminamos la carpeta node_modules para la edición del proyecto
+
+````    
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "node_modules": true
+    }
+```
