@@ -52,7 +52,8 @@ Successfully created .eslintrc.json file in ....
 
 
 ## Conexión a base de datos
-````
+
+```
 var mongoose = require('mongoose')
 var User = require('./User')
 mongoose.Promise = global.Promise
